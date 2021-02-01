@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fx.shop.mapper.ProductInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fx.shop.entity.ProductInfo">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="master_img" property="masterImg" />
+        <result column="min_img" property="minImg" />
+        <result column="sort_code" property="sortCode" />
+        <result column="sale_quantity" property="saleQuantity" />
+        <result column="price" property="price" />
+        <result column="sub_title" property="subTitle" />
+        <result column="description" property="description" />
+        <result column="stock" property="stock" />
+        <result column="weight" property="weight" />
+        <result column="keywords" property="keywords" />
+        <result column="per_limit" property="perLimit" />
+        <result column="detail_html" property="detailHtml" />
+        <result column="sort_no" property="sortNo" />
+        <result column="publish_status" property="publishStatus" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, name, master_img, min_img, sort_code, sale_quantity, price, sub_title, description, stock, weight, keywords, per_limit, detail_html, sort_no, publish_status, create_time, update_time
+    </sql>
+
+</mapper>

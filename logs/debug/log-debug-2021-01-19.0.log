@@ -1,0 +1,4 @@
+2021-01-19 23:25:35.253 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-19 23:25:52.940 [http-nio-8787-exec-4] DEBUG com.fx.shop.mapper.CccMapper.insert - ==>  Preparing: INSERT INTO ccc ( id, pid ) VALUES ( ?, ? ) 
+2021-01-19 23:25:52.968 [http-nio-8787-exec-4] DEBUG com.fx.shop.mapper.CccMapper.insert - ==> Parameters: 1351551457559678978(Long), 789(Long)
+2021-01-19 23:25:53.058 [http-nio-8787-exec-4] DEBUG com.fx.shop.mapper.CccMapper.insert - <==    Updates: 1

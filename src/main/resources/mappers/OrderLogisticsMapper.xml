@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fx.shop.mapper.OrderLogisticsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fx.shop.entity.OrderLogistics">
+        <id column="id" property="id" />
+        <result column="order_no" property="orderNo" />
+        <result column="freight_amount" property="freightAmount" />
+        <result column="refund_freight_amount" property="refundFreightAmount" />
+        <result column="freight_cost_amount" property="freightCostAmount" />
+        <result column="logistics_type" property="logisticsType" />
+        <result column="consignee" property="consignee" />
+        <result column="consignee_phone" property="consigneePhone" />
+        <result column="province" property="province" />
+        <result column="province_code" property="provinceCode" />
+        <result column="city" property="city" />
+        <result column="city_code" property="cityCode" />
+        <result column="district" property="district" />
+        <result column="district_code" property="districtCode" />
+        <result column="street" property="street" />
+        <result column="street_code" property="streetCode" />
+        <result column="address" property="address" />
+        <result column="zip_code" property="zipCode" />
+        <result column="logistics_company" property="logisticsCompany" />
+        <result column="logistics_company_code" property="logisticsCompanyCode" />
+        <result column="express_no" property="expressNo" />
+        <result column="delivery_time" property="deliveryTime" />
+        <result column="receive_time" property="receiveTime" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, order_no, freight_amount, refund_freight_amount, freight_cost_amount, logistics_type, consignee, consignee_phone, province, province_code, city, city_code, district, district_code, street, street_code, address, zip_code, logistics_company, logistics_company_code, express_no, delivery_time, receive_time, create_time, update_time
+    </sql>
+
+</mapper>

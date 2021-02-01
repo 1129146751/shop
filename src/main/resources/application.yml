@@ -1,0 +1,120 @@
+server:
+  port: 8787
+
+spring:
+  application:
+    name: shop
+  servlet:
+    multipart:
+      max-request-size: 10MB # 上传文件总的最大值
+      max-file-size: 10MB # 单个文件的最大值
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    sql-script-encoding: utf-8
+    username: root
+    password: root
+    initial-size: 5
+    min-idle: 5
+    max-active: 10
+    max-wait: 60000
+    #验证连接的有效性
+    test-while-idle: true
+    #空闲连接回收的时间间隔，与test-while-idle一起使用，单位毫秒
+    time-between-eviction-runs-millis: 300000
+    #获取连接时候验证，会影响性能，开发和测试环境可开启，生产环境为false
+    test-on-borrow: true
+    validation-query: select 1
+    #连接池空闲连接的有效时间 ，单位毫秒
+    min-evictable-idle-time-millis: 300000
+    #当连接超过废弃超时时间时，是否立刻删除该连接
+    remove-abandoned: true
+    remove-abandoned-timeout: 1800
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 3000
+    # password:
+    pool:
+      minIdle: 1
+      maxIdle: 10
+      maxWait: 3
+      maxActive: 8
+
+swagger:
+  enabled: true # 是否开启swagger，开发环境打开，线上关闭
+  application:
+    name: 在线商城 # 项目名称
+    version: 1.0 # 项目版本信息
+    group01: dev  # 分组信息(可自行添加)
+    group02: prod  # 分组信息(可自行添加)
+    description: 在线商城-API接口文档  # 项目描述信息
+    selector: com.fx.shop.controller # 扫描路径选择
+    pathMapping: shop
+logging:
+  path: logs
+  config: classpath:logback-spring.xml
+  level:
+    com.fx: debug
+
+config:
+  encrypt-jwtKey: DXSDI82SESMEw63jsdf8w72
+  id-path: http://xn.sanyicloud.com/ids
+#  id: test1654280
+#  key: 676221ca-0e88-456c-9fbc-22f05d1e3dbc
+#  # 即时查询url
+#  immediate-url: http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json
+#  # 物流跟踪url
+#  tracking-url: http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json
+#  #预约取件url
+#  appoint-url: http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json
+#  #上门取件url
+#  visit-url: http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json
+#  #电子面单url
+#  electronic-url: http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json
+#  #电子面单取消url
+#  electronicCancel-url: http://sandboxapi.kdniao.com:8080/kdniaosandbox/gateway/exterfaceInvoke.json
+  id: 1654280
+  key: fa971718-3923-40bd-a42b-7ab53fd4dd27
+  # 即时查询url
+  immediate-url: http://api.kdniao.com/Ebusiness/EbusinessOrderHandle.aspx
+  # 物流跟踪url
+  tracking-url: http://api.kdniao.com/api/dist
+  #预约取件url
+  appoint-url: http://api.kdniao.com/api/OOrderService
+  #上门取件url
+  visit-url: http://api.kdniao.com/api/OOrderService
+  #电子面单url
+  electronic-url: http://api.kdniao.com/api/EOrderService
+  #电子面单取消url
+  electronicCancel-url: https://api.kdniao.com/api/EOrderService
+
+
+
+reqType:
+#  immediate-query: 1002     #即时查询
+#  logistics-tracking: 1008  #物流跟踪
+#  appoint-pick-up: 1001     #预约取件
+#  visit-pick-up: 1801       #上门取件
+#  electronic-sheet: 1007    #电子面单
+#  electronic-cancel: 1147    #电子面单取消
+  immediate-query: 8001     #即时查询
+  logistics-tracking: 8008  #物流跟踪
+  appoint-pick-up: 1001     #预约取件
+  visit-pick-up: 1801       #上门取件
+  electronic-sheet: 1007    #电子面单
+  electronic-cancel: 1147    #电子面单取消
+
+wx:
+  appId: wx7372ceb4c0f2de60
+  appSecret: fed94910d2f63cc2e1a6a7b6a751fa9a
+  token:
+  aesKey:
+  mchId: 1605792423
+  mchKey: DfsFEfsd12DSAfsd213sdf432asda231
+  keyPath: 30820a9202010330820a5c06092a864886f70d010701a0820a4d04820a4930820a45308204c706092a864886f70d010706a08204b8308204b4020100308204ad06092a864886f70d010701301c060a2a864886f70d010c0106300e040895d5d36eebd523f102020800808204805efe77d4bb247a5596edf5cbb05f1f695329bcbf641b2fc8958ae97e625fbfd09c2d8964c6368d36dfc3a7c4e4d130e1a63e0265c5dd1e2a51b67b18e275bcf2790c1752818a938fa94c14ccb6de92ee474f0a9bbc2fa1b53555be5b22efa436ba2fc53dfa1cc5dbc5bf7dc976747c34144efc76415f88e3227dc67d6f0850ef96a3d7b8359bd5db3d71ba91083876096fcc5e387e4631bbec6931d684ecad9e5ae4b8234667273557fc9bd95abcc127edd949d0790dbfce4cc76f48ab755f7dbdb0022fb37e8cbd1a719c87d9d8f46b94537e75266f00b4a77c9aad3d0cf0a635dadf8950c26b9560f3d2b25d902fc59130edd5a280bde745458d94252059d8ef485f3c5ef7c001f3d4c2d8d9b29f7f655e1776519b0cf946af36982f0d97dd0c92237a4be338b9cde67f490bcdd730a2e49a36b1043287000e1f48f5a0397c93ecb7bb791d6a5dd27e51a2490d534a60c2ee62c53699bc67d48e746a0e9a7a8aaf6c0329a3112d7e8f63ee58e93680a278200841339bde3a65425874ad0259e840d58c2d462cab8bd26c95e69ecd61c417bd88892157a80f6c3f6f093619831e01c7336c1bb9ec06a639ad26b337fc58fa16cb4e2a7d85fda30fe593e3388c41b10ada5befda30997722751a1f0b07fe7f01d70c1d2b9bf656a6544a5be13534b8ab33eeaa9cc35f2a71cd5e27027e46238a94ebbf03505fb460f2c455938e8302b7676578c5aaf5aa147efb09d17249f8c4c5bd3e62d386cbc01167d4272dd696e0843b3c9acce682a9357c935cc022cc4d339b7a56f5f31734245aa365b79740ad90a4b5f26678de618e09d36010b754a6b768939e860cb6a5d108f1d7a61e6360e4b91111f1629bd2cadcfbc7885edb6841aab430ceba4dbc1f611f676e217a93fdc661fb5a18330ab47c910398de2e254dbf86967f7e3c766650a5ac56848895f1aeac1ee4837baea71bd4a07ac91c7bbb0f24756ea9e33191b1dc1fe180bbe76a73521e0d6898bca8e9673f0927c94f36400aa408f39a54de89b8b6b5f443cb1d70bc0ab24518b9e4ea3eaac6084b1fd709b68d3c817a5304427f09eeb15f53ec0586329ef6f16ea52734ac9622fbd3dce32b3c9c379a33f3044926e6cf6dd41d5d6cb92d85945e547934bdcb19499ffb4ac80e0256e3fd1620cbe1e7b1e83e3a00c1a491995a91bd0d2a3779b3e5db34d3d0043af268b47b73523746f250693196f1020d5d7f74f6cfb096d146bc4ebf24a42fd72b48057fb44bad402ce58a36e17b887db076531a7f59decd42682f3128110dc2dc33855a9f67d201d80627659187cda40aed33b522183fa0c03e68cde761e43f05702d792a442d2002accfe660cf4534a8d531c177ae1277cb1c83a6c39be0ab6e46cb11952080597cb220518f737bdc160efc9c29b0893f7108460e5ebc9a92332272e23b1dc0d6a21813745f0c730d12edc35406a6c0228ac6c55e1a6e88a662d2489c4b30b9006936fe2a9c86248174f80257c57d4f9ebe7bf7549064bcda90a03d62dee2589b11fe7038921551d3ab075ee9b2a26f9565d30341e0ab24cbdb132e655a307aaf609cf791e692971a1520e5599c6510ddd30328cf1127187e54f2aaa91490126d3082057606092a864886f70d010701a0820567048205633082055f3082055b060b2a864886f70d010c0a0102a08204ee308204ea301c060a2a864886f70d010c0103300e04080aa73e81eb31359502020800048204c88b9702429f272389e534f054722beda3322cd35dc9ddf96bcc446d91cea4aa2ce48612941c01204e2b516a9554f67d49540065858165d462eb6dd169e5b6d7877df10fc46337e2dc15ad2674929835d33984103c102758b057ac4f417c12f66803d2423cfa938c0098c9fe00ce148d658d2c9ea247c7f83e3097a5dc9b36446bc2a8e79a25abc8c43787b200e605d54303981736878fb1c5ff7801d03b0c7dfdafa30f5f2a4248fe195dc80d7bb11070e109966b77aa75c5f0ea766954b429843701106e835c88310d05af7cf8baa097ca064487f7736e4c7f180537a433d82aa137da9830958dc38c6b4fc91b1a66984dd522ef7963eaf07c4a04cd42e250a6ecca097d053b7d264d0eb6e22686354005de8cd6ba382d587b8dbbf6891bdcf8f71d44c183f3cefbdeb21386caf8af3ff8d33f5a3ebe753b384e6abd13dc484067142eb4b5989b9eba96f5b4788650b988f758f580fa82ebec556d46b403585723a5c888ee1f9b73ab1fccb2d8296f79fea1e61e4177114e3991f6c245ea5c05f67bb065bb7a304b78e291109d1f7a620ff7bf925bc54fbd93bede74b99fee0fb6a42c163493b8c48adae1d821b9834f187c475dc1af65c4fc44cfda7ab1136596803390b38661dbd88f697f20afa522fd2e65e748ceaf44d664cff737a91b813cc5d663848f60e9cfab744f3d46fe656f6f90b66a0518ca91799ee6a6e9d755015a33886e076b4013b7c5478fd9bff7746c171f168f6a47b320726cab1e2beb44aa4a4c51087c11f817bc118b79eafd5cd50595970d35d96c5acc68dc081192d7c4e1f1db9d223255771b5839fa4e72acee50240b8119357c323aac479df9439b334b3b1835628aaa7ab8e9de3db25243ce8b3b2d8c9a30f51585bd45ebf91da3cbcc6b4909e8233ecfe5169c302b5afab73ad79b813c00b22784d977d446a7487d3b893f290aa967cadac8aa43e3097611ba5b0dcfa6e55e8b2e05ae5a2da7940ea29dbb99f0d11250fcfaac1af731c25ffb4df6c7e36cb99dd780a8b5ba1fd3f1c4082091e71d6d7d4857f6e75742e59c99f852641450a622519be14ba68464e58afed9f9c5b473061e7fb358c63fddba3b3989af512b0411e348f48dfed9927eee2d67a397cb1cd42c2824da10042a353157515f65223f8fe078f7a35a3147befbe1d1591eca6f7991077f2cbd5a17d06f0b93edef314f18e659dc64be57d5381cbc9a41a23cedda8a982c87bc8bbc256fbabcb165c97ea31968b62b1fe07c78817b857e93757d24a88687da8d922124ea3c09d06fd9ecdf0637d5ffa3b18ed4e0c3298e4c34aa7c1d1f2b4eca0f9e72559906e4e99fb627c3ffa83a8fb71aa7d855a4fa055f67abdfac06bbb0c2b49fa709a7fd5148c3371f90607fed73c72739ae058dabaa633bdc967d7c0d1a4d7c6009d5a218c811537d683b468165af609f1ffa7ad92c064f250edebec0854af299c16b8856436280c2ab3c9f2bacaed46d204c6c2bd9d608c56b1154b62fd7a1471d7499f528875ac50a190d2dc4619793185c9d527cf0bf577ed884420cb14aa2edbacf0d336fbfcd96befe546548e30a8292fb04072cafa15c039d99250a97c9c1d847cec35db012aeaf19378eb9e5a6700545ca0104dbf7c357f86847ade366481cbb641af8462004ed28ec30438084e001f54e1fe0b9a8b9086ce66d8eb6eae5ae490f115a7b025fb4a6674c94a7c0826f631fc0315a302306092a864886f70d0109153116041441c2c908a315eac518ea151c0f4fb54e5a711e99303306092a864886f70d01091431261e2400540065006e007000610079002000430065007200740069006600690063006100740065302d3021300906052b0e03021a050004141268396bd37688ce8f9f62f7525ce5d9f0f60117040873af5475b97a90c0
+
+
+file:
+  path: F:\\myIdeaspace #本地路径

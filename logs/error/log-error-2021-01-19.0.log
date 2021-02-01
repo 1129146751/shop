@@ -1,0 +1,474 @@
+2021-01-19 22:33:37.281 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'swaggerConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.application.group01' in value "${swagger.application.group01}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.fx.shop.ShopApplication.main(ShopApplication.java:21)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'swagger.application.group01' in value "${swagger.application.group01}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:931)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2021-01-19 23:02:26.771 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target [Bindable@5820070c type = org.springframework.boot.autoconfigure.web.servlet.MultipartProperties, value = 'provided', annotations = array<Annotation>[@org.springframework.boot.context.properties.ConfigurationProperties(ignoreInvalidFields=false, ignoreUnknownFields=false, prefix=spring.servlet.multipart, value=spring.servlet.multipart)]] failed:
+
+    Property: spring.servlet.multipart.datasource
+    Value: 
+    Origin: class path resource [application.yml] - 11:18
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.driver-class-name
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: class path resource [application.yml] - 13:26
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.initial-size
+    Value: 5
+    Origin: class path resource [application.yml] - 18:21
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.max-active
+    Value: 10
+    Origin: class path resource [application.yml] - 20:19
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.max-wait
+    Value: 60000
+    Origin: class path resource [application.yml] - 21:17
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.min-evictable-idle-time-millis
+    Value: 300000
+    Origin: class path resource [application.yml] - 30:39
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.min-idle
+    Value: 5
+    Origin: class path resource [application.yml] - 19:17
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.password
+    Value: root
+    Origin: class path resource [application.yml] - 17:17
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.remove-abandoned
+    Value: true
+    Origin: class path resource [application.yml] - 32:25
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.remove-abandoned-timeout
+    Value: 1800
+    Origin: class path resource [application.yml] - 33:33
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.sql-script-encoding
+    Value: utf-8
+    Origin: class path resource [application.yml] - 15:28
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.test-on-borrow
+    Value: true
+    Origin: class path resource [application.yml] - 27:23
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.test-while-idle
+    Value: true
+    Origin: class path resource [application.yml] - 23:24
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.time-between-eviction-runs-millis
+    Value: 300000
+    Origin: class path resource [application.yml] - 25:42
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.type
+    Value: com.alibaba.druid.pool.DruidDataSource
+    Origin: class path resource [application.yml] - 12:13
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.url
+    Value: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai
+    Origin: class path resource [application.yml] - 14:12
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.username
+    Value: root
+    Origin: class path resource [application.yml] - 16:17
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+    Property: spring.servlet.multipart.validation-query
+    Value: select 1
+    Origin: class path resource [application.yml] - 28:25
+    Reason: The elements [spring.servlet.multipart.datasource,spring.servlet.multipart.driver-class-name,spring.servlet.multipart.initial-size,spring.servlet.multipart.max-active,spring.servlet.multipart.max-wait,spring.servlet.multipart.min-evictable-idle-time-millis,spring.servlet.multipart.min-idle,spring.servlet.multipart.password,spring.servlet.multipart.remove-abandoned,spring.servlet.multipart.remove-abandoned-timeout,spring.servlet.multipart.sql-script-encoding,spring.servlet.multipart.test-on-borrow,spring.servlet.multipart.test-while-idle,spring.servlet.multipart.time-between-eviction-runs-millis,spring.servlet.multipart.type,spring.servlet.multipart.url,spring.servlet.multipart.username,spring.servlet.multipart.validation-query] were left unbound.
+
+Action:
+
+Update your application's configuration
+
+2021-01-19 23:03:29.708 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cccServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fx.shop.mapper.CccMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.fx.shop.ShopApplication.main(ShopApplication.java:21)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fx.shop.mapper.CccMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1777)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1333)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+2021-01-19 23:06:15.496 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-01-19 23:06:37.044 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2021-01-19 23:11:04.693 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cccServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fx.shop.mapper.CccMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.fx.shop.ShopApplication.main(ShopApplication.java:21)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fx.shop.mapper.CccMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1777)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1333)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+2021-01-19 23:15:22.460 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mapper in com.fx.shop.service.impl.CccServiceImpl required a bean of type 'com.fx.shop.mapper.CccMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fx.shop.mapper.CccMapper' in your configuration.
+
+2021-01-19 23:15:44.719 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mapper in com.fx.shop.service.impl.CccServiceImpl required a bean of type 'com.fx.shop.mapper.CccMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fx.shop.mapper.CccMapper' in your configuration.
+
+2021-01-19 23:17:46.924 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mapper in com.fx.shop.service.impl.CccServiceImpl required a bean of type 'com.fx.shop.mapper.CccMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fx.shop.mapper.CccMapper' in your configuration.
+
+2021-01-19 23:18:28.682 [main] ERROR org.mybatis.spring.mapper.MapperFactoryBean - Error while adding the mapper 'interface com.fx.shop.mapper.CccMapper' to configuration.
+com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableId can't more than one in Class: "com.fx.shop.entity.Ccc".
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:49)
+	at com.baomidou.mybatisplus.core.metadata.TableInfoHelper.initTableFields(TableInfoHelper.java:270)
+	at com.baomidou.mybatisplus.core.metadata.TableInfoHelper.initTableInfo(TableInfoHelper.java:141)
+	at com.baomidou.mybatisplus.core.injector.AbstractSqlInjector.inspectInject(AbstractSqlInjector.java:53)
+	at com.baomidou.mybatisplus.core.MybatisMapperAnnotationBuilder.parse(MybatisMapperAnnotationBuilder.java:122)
+	at com.baomidou.mybatisplus.core.MybatisMapperRegistry.addMapper(MybatisMapperRegistry.java:82)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.addMapper(MybatisConfiguration.java:103)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.fx.shop.ShopApplication.main(ShopApplication.java:23)
+2021-01-19 23:18:28.742 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cccController': Unsatisfied dependency expressed through field 'service'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cccServiceImpl': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cccMapper' defined in file [F:\myIdeaspace\shop\target\classes\com\fx\shop\mapper\CccMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableId can't more than one in Class: "com.fx.shop.entity.Ccc".
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
+	at com.fx.shop.ShopApplication.main(ShopApplication.java:23)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cccServiceImpl': Unsatisfied dependency expressed through field 'mapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cccMapper' defined in file [F:\myIdeaspace\shop\target\classes\com\fx\shop\mapper\CccMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableId can't more than one in Class: "com.fx.shop.entity.Ccc".
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cccMapper' defined in file [F:\myIdeaspace\shop\target\classes\com\fx\shop\mapper\CccMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableId can't more than one in Class: "com.fx.shop.entity.Ccc".
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1367)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1287)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 33 common frames omitted
+Caused by: java.lang.IllegalArgumentException: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableId can't more than one in Class: "com.fx.shop.entity.Ccc".
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 43 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: @TableId can't more than one in Class: "com.fx.shop.entity.Ccc".
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:49)
+	at com.baomidou.mybatisplus.core.metadata.TableInfoHelper.initTableFields(TableInfoHelper.java:270)
+	at com.baomidou.mybatisplus.core.metadata.TableInfoHelper.initTableInfo(TableInfoHelper.java:141)
+	at com.baomidou.mybatisplus.core.injector.AbstractSqlInjector.inspectInject(AbstractSqlInjector.java:53)
+	at com.baomidou.mybatisplus.core.MybatisMapperAnnotationBuilder.parse(MybatisMapperAnnotationBuilder.java:122)
+	at com.baomidou.mybatisplus.core.MybatisMapperRegistry.addMapper(MybatisMapperRegistry.java:82)
+	at com.baomidou.mybatisplus.core.MybatisConfiguration.addMapper(MybatisConfiguration.java:103)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 46 common frames omitted
+2021-01-19 23:23:29.065 [http-nio-8787-exec-3] ERROR com.fx.shop.config.handler.GlobalExceptionHandler - 系统异常==>错误码：10000，错误信息：java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+2021-01-19 23:23:29.069 [http-nio-8787-exec-3] ERROR com.fx.shop.config.handler.GlobalExceptionHandler - 系统异常==>异常信息：
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:309)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:272)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1176)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1008)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:345)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:277)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:124)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 您的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:138)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:152)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1253)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:764)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:717)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:707)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:572)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:220)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1195)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:399)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:305)
+	... 54 common frames omitted

@@ -1,0 +1,585 @@
+2021-01-19 22:14:52.896 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:14:52.929 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 25828 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:14:52.930 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:14:53.978 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:14:53.981 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:14:54.004 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:14:54.472 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:14:54.484 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:14:54.485 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:14:54.485 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:14:54.590 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:14:54.591 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1476 ms
+2021-01-19 22:14:54.867 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:14:55.406 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:14:55.427 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 22:14:55.438 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 3.339 seconds (JVM running for 4.495)
+2021-01-19 22:15:10.954 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:15:15.109 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:15:15.113 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 11240 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:15:15.114 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:15:15.767 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:15:15.770 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:15:15.791 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:15:16.212 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:15:16.222 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:15:16.223 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:15:16.223 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:15:16.318 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:15:16.318 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1155 ms
+2021-01-19 22:15:16.555 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:15:17.145 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:15:17.167 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 22:15:17.178 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 2.789 seconds (JVM running for 4.058)
+2021-01-19 22:15:46.719 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 22:15:46.719 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 22:15:46.720 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-19 22:17:40.741 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:17:46.734 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 22024 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:17:46.737 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:17:46.749 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:17:47.557 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:17:47.561 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:17:47.594 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:17:48.088 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:17:48.099 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:17:48.100 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:17:48.100 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:17:48.198 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:17:48.198 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1395 ms
+2021-01-19 22:17:48.469 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:17:49.025 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:17:49.048 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 22:17:49.050 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 22:17:49.060 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 3.102 seconds (JVM running for 4.336)
+2021-01-19 22:18:05.353 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 22:18:05.353 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 22:18:05.354 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-19 22:23:24.793 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:23:30.236 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 20548 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:23:30.236 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:23:30.240 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:23:31.009 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:23:31.012 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:23:31.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:23:31.575 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:23:31.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:23:31.588 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:23:31.588 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:23:31.703 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:23:31.704 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1413 ms
+2021-01-19 22:23:31.965 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:23:32.544 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:23:32.565 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 22:23:32.568 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 22:23:32.578 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 3.287 seconds (JVM running for 4.457)
+2021-01-19 22:23:34.687 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 22:23:34.688 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 22:23:34.690 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-19 22:24:11.992 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:24:15.458 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:24:15.524 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 9860 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:24:15.525 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:24:16.426 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:24:16.428 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:24:16.451 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:24:16.922 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:24:16.931 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:24:16.933 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:24:16.933 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:24:17.025 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:24:17.026 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+2021-01-19 22:24:17.279 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:24:17.850 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:24:17.872 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 22:24:17.875 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 22:24:17.885 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 3.193 seconds (JVM running for 4.218)
+2021-01-19 22:24:21.006 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 22:24:21.006 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 22:24:21.008 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-19 22:30:34.509 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:33:35.563 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:33:35.571 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 13356 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:33:35.573 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:33:36.512 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:33:36.515 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:33:36.541 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:33:37.008 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:33:37.019 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:33:37.019 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:33:37.020 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:33:37.116 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:33:37.117 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1493 ms
+2021-01-19 22:33:37.177 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 22:33:37.214 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 22:34:42.579 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 22:34:42.585 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 23544 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 22:34:42.586 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 22:34:43.550 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 22:34:43.553 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 22:34:43.579 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-01-19 22:34:44.039 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 22:34:44.049 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:34:44.050 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 22:34:44.050 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 22:34:44.147 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 22:34:44.147 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1513 ms
+2021-01-19 22:34:44.593 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 22:34:44.673 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 22:34:45.212 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 22:34:45.234 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 22:34:45.236 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 22:34:45.236 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 22:34:45.242 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 22:34:45.280 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 22:34:45.504 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 22:34:45.531 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 22:34:45.536 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 22:34:45.553 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 22:34:45.563 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 22:34:45.566 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 22:34:45.569 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 22:34:45.580 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 3.74 seconds (JVM running for 4.839)
+2021-01-19 22:34:54.697 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 22:34:54.697 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 22:34:54.698 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-19 22:35:28.353 [http-nio-8787-exec-4] INFO  com.fx.shop.service.impl.QueryServiceImpl - 请求参数：{LogisticCode=3488488444444, ShipperCode=YTO, OrderCode=null, CustomerName=null}
+2021-01-19 22:35:28.415 [http-nio-8787-exec-4] INFO  com.fx.shop.service.impl.QueryServiceImpl - 请求的json参数:RequestData=%7B%22ShipperCode%22%3A%22YTO%22%2C%22LogisticCode%22%3A%223488488444444%22%7D&EBusinessID=1654280&DataType=2&DataSign=OTcwMTRmNWNjYzE0ZTJiYzBmOGU2OTg1ZmYzYzEwMmM%3D&RequestType=8001
+2021-01-19 23:02:16.739 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:02:24.828 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:02:24.840 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 22700 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:02:24.841 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:02:26.128 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:02:26.131 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:02:26.169 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:02:26.750 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:03:27.371 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:03:27.420 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 7676 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:03:27.420 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:03:28.606 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:03:28.609 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:03:28.637 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:03:29.309 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:03:29.321 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:03:29.322 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:03:29.323 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:03:29.436 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:03:29.437 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1938 ms
+2021-01-19 23:03:29.631 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:03:29.655 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:06:12.907 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:06:12.935 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 25612 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:06:12.936 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:06:14.015 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:06:14.017 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:06:14.049 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:06:14.619 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:06:14.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:06:14.630 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:06:14.630 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:06:14.731 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:06:14.731 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1746 ms
+2021-01-19 23:06:15.198 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:06:15.269 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:06:15.451 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:06:15.455 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:06:15.476 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:06:29.800 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:06:29.811 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 25840 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:06:29.812 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:06:31.019 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:06:31.022 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:06:31.051 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:06:31.608 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:06:31.719 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1842 ms
+2021-01-19 23:06:32.162 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:06:32.230 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:06:32.358 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:06:34.583 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:06:34.582 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 22464 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:06:34.585 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:06:35.812 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:06:35.814 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:06:35.842 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:06:36.324 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:06:36.333 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:06:36.334 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:06:36.334 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:06:36.423 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:06:36.424 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1744 ms
+2021-01-19 23:06:36.827 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:06:36.889 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:06:37.004 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:06:37.008 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:06:37.027 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:10:19.669 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:10:19.675 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 26556 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:10:19.675 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:10:20.803 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:10:20.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:10:20.836 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:10:21.426 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:10:21.439 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:10:21.440 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:10:21.440 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:10:21.549 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:10:21.549 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1820 ms
+2021-01-19 23:10:22.041 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:10:22.113 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:10:23.259 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:10:23.281 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 23:10:23.283 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 23:10:23.283 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 23:10:23.287 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 23:10:23.326 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:10:23.560 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:10:23.587 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 23:10:23.591 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 23:10:23.607 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 23:10:23.616 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 23:10:23.619 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 23:10:23.622 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 23:10:23.634 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 4.747 seconds (JVM running for 6.021)
+2021-01-19 23:10:57.414 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-19 23:10:57.415 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:11:02.673 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 23468 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:11:02.677 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:11:02.679 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:11:03.734 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:11:03.736 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:11:03.765 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:11:04.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:11:04.360 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:11:04.361 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:11:04.361 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:11:04.462 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:11:04.463 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1734 ms
+2021-01-19 23:11:04.644 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:11:04.667 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:15:20.319 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 21104 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:15:20.323 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:15:20.383 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:15:21.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:15:21.523 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:15:21.553 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:15:22.146 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:15:22.157 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:15:22.157 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:15:22.158 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:15:22.259 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:15:22.260 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1873 ms
+2021-01-19 23:15:22.412 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:15:22.438 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:15:42.746 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:15:42.756 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 26452 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:15:42.757 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:15:43.822 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:15:43.825 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:15:43.852 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:15:44.410 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:15:44.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:15:44.421 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:15:44.421 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:15:44.522 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:15:44.522 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1701 ms
+2021-01-19 23:15:44.673 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:15:44.697 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:17:44.977 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:17:45.063 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 14372 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:17:45.063 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:17:46.118 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:17:46.121 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:17:46.148 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:17:46.664 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:17:46.673 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:17:46.674 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:17:46.674 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:17:46.763 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:17:46.764 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1640 ms
+2021-01-19 23:17:46.829 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:17:46.906 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:18:25.405 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:18:25.415 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 9472 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:18:25.416 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:18:27.120 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:18:27.123 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:18:27.159 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:18:27.894 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:18:27.906 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:18:27.907 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:18:27.907 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:18:28.011 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:18:28.011 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2481 ms
+2021-01-19 23:18:28.687 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-19 23:18:28.691 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-01-19 23:18:28.717 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-19 23:20:16.076 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:20:16.105 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 12652 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:20:16.106 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:20:17.317 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:20:17.319 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:20:17.350 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:20:18.098 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:20:18.108 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:20:18.109 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:20:18.110 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:20:18.215 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:20:18.216 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2029 ms
+2021-01-19 23:20:19.316 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:20:19.398 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:20:20.073 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:20:20.094 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 23:20:20.096 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 23:20:20.097 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 23:20:20.101 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 23:20:20.137 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:20:20.374 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:20:20.377 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-19 23:20:20.398 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 23:20:20.402 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 23:20:20.416 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 23:20:20.425 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 23:20:20.428 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 23:20:20.431 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 23:20:20.443 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.141 seconds (JVM running for 6.243)
+2021-01-19 23:20:25.502 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 23:20:25.503 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 23:20:25.504 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-01-19 23:20:32.414 [http-nio-8787-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-01-19 23:21:09.035 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:21:09.036 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-01-19 23:21:09.044 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-01-19 23:21:14.613 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:21:14.676 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 24744 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:21:14.677 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:21:15.771 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:21:15.774 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:21:15.802 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:21:16.408 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:21:16.418 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:21:16.419 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:21:16.420 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:21:16.527 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:21:16.527 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1788 ms
+2021-01-19 23:21:17.738 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:21:17.812 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:21:18.499 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:21:18.520 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 23:21:18.522 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 23:21:18.523 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 23:21:18.527 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 23:21:18.563 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:21:18.801 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:21:18.820 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-19 23:21:18.847 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 23:21:18.853 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 23:21:18.871 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 23:21:18.886 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 23:21:18.889 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 23:21:18.892 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 23:21:18.909 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.118 seconds (JVM running for 6.191)
+2021-01-19 23:23:16.458 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:23:16.460 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-19 23:23:23.437 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:23:23.454 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 4360 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:23:23.454 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:23:24.788 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:23:24.793 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:23:24.828 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:23:25.505 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:23:25.516 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:23:25.517 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:23:25.517 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:23:25.629 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:23:25.629 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2099 ms
+2021-01-19 23:23:26.748 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:23:26.828 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:23:27.619 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:23:27.643 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 23:23:27.645 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 23:23:27.646 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 23:23:27.650 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 23:23:27.688 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:23:27.909 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:23:27.912 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-19 23:23:27.914 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-19 23:23:27.917 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 23:23:27.918 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 23:23:27.924 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-01-19 23:23:27.941 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 23:23:27.945 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 23:23:27.961 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 23:23:27.974 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 23:23:27.977 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 23:23:27.982 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 23:23:28.006 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.463 seconds (JVM running for 6.684)
+2021-01-19 23:23:36.429 [http-nio-8787-exec-7] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-01-19 23:25:22.349 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:25:22.351 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-01-19 23:25:22.357 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-01-19 23:25:25.991 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:25:25.998 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 3780 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:25:25.999 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:25:27.335 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:25:27.338 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:25:27.373 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:25:28.045 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:25:28.055 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:25:28.056 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:25:28.057 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:25:28.162 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:25:28.162 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2096 ms
+2021-01-19 23:25:29.326 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:25:29.402 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:25:30.111 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:25:30.136 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 23:25:30.138 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 23:25:30.138 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 23:25:30.143 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 23:25:30.179 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:25:30.382 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:25:30.385 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-19 23:25:30.386 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-19 23:25:30.404 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 23:25:30.407 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 23:25:30.420 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 23:25:30.428 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 23:25:30.431 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 23:25:30.434 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 23:25:30.445 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.267 seconds (JVM running for 6.301)
+2021-01-19 23:25:31.438 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:25:31.440 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-19 23:25:35.243 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-19 23:25:35.252 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 26184 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-19 23:25:35.253 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-19 23:25:36.353 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 23:25:36.356 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 23:25:36.386 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-19 23:25:36.979 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-19 23:25:36.989 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:25:36.990 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-19 23:25:36.990 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 23:25:37.093 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-19 23:25:37.094 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1783 ms
+2021-01-19 23:25:38.187 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-19 23:25:38.260 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 23:25:39.148 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-19 23:25:39.169 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-19 23:25:39.171 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-19 23:25:39.172 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-19 23:25:39.176 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-19 23:25:39.213 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:25:39.491 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-19 23:25:39.493 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-19 23:25:39.495 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-19 23:25:39.519 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-19 23:25:39.523 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-19 23:25:39.538 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-19 23:25:39.547 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-19 23:25:39.549 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-19 23:25:39.552 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-19 23:25:39.566 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.101 seconds (JVM running for 6.275)
+2021-01-19 23:25:44.400 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 23:25:44.401 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-19 23:25:44.403 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-19 23:25:52.800 [http-nio-8787-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

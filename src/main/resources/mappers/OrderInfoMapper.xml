@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fx.shop.mapper.OrderInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fx.shop.entity.OrderInfo">
+        <id column="id" property="id" />
+        <result column="order_no" property="orderNo" />
+        <result column="user_id" property="userId" />
+        <result column="tracking_status" property="trackingStatus" />
+        <result column="total_weight" property="totalWeight" />
+        <result column="product_total_amount" property="productTotalAmount" />
+        <result column="freight_amount" property="freightAmount" />
+        <result column="other_amount" property="otherAmount" />
+        <result column="discount_amount" property="discountAmount" />
+        <result column="pay_status" property="payStatus" />
+        <result column="pay_amount" property="payAmount" />
+        <result column="pay_time" property="payTime" />
+        <result column="pay_type" property="payType" />
+        <result column="distribut_type" property="distributType" />
+        <result column="address_id" property="addressId" />
+        <result column="logistics_id" property="logisticsId" />
+        <result column="failure_time" property="failureTime" />
+        <result column="failure_reason" property="failureReason" />
+        <result column="refund_reason" property="refundReason" />
+        <result column="refund_time" property="refundTime" />
+        <result column="refund_fail_reason" property="refundFailReason" />
+        <result column="refund_amount" property="refundAmount" />
+        <result column="out_trade_no" property="outTradeNo" />
+        <result column="trade_no" property="tradeNo" />
+        <result column="remark" property="remark" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, order_no, user_id, tracking_status, total_weight, product_total_amount, freight_amount, other_amount, discount_amount, pay_status, pay_amount, pay_time, pay_type, distribut_type, address_id, logistics_id, failure_time, failure_reason, refund_reason, refund_time, refund_fail_reason, refund_amount, out_trade_no, trade_no, remark, create_time, update_time
+    </sql>
+
+</mapper>

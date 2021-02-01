@@ -1,0 +1,25 @@
+2021-01-22 09:49:56.918 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 09:51:34.670 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 10:32:02.291 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 10:34:32.214 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.ProductInfoMapper.insert - ==>  Preparing: INSERT INTO product_info ( name, master_img, min_img, sort_code, price, sub_title, description, stock, weight, keywords, per_limit, detail_html, sort_no, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-01-22 10:34:32.261 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.ProductInfoMapper.insert - ==> Parameters: 杆子(String), 主图(String), 小图(String), A01(String), 100(BigDecimal), (String), 这是一个杆子(String), 100(Integer), 0(BigDecimal), (String), 12(Integer), (String), 0(Integer), 2021-01-22 10:34:31.442(Timestamp)
+2021-01-22 10:35:18.158 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 10:35:30.403 [http-nio-8787-exec-4] DEBUG com.fx.shop.mapper.ProductInfoMapper.insert - ==>  Preparing: INSERT INTO product_info ( name, master_img, min_img, sort_code, price, sub_title, description, stock, weight, keywords, per_limit, sort_no, create_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2021-01-22 10:35:30.442 [http-nio-8787-exec-4] DEBUG com.fx.shop.mapper.ProductInfoMapper.insert - ==> Parameters: 杆子(String), 主图(String), 小图(String), A01(String), 100(BigDecimal), (String), 这是一个杆子(String), 100(Integer), 0(BigDecimal), (String), 12(Integer), 0(Integer), 2021-01-22 10:35:29.965(Timestamp)
+2021-01-22 10:35:30.585 [http-nio-8787-exec-4] DEBUG com.fx.shop.mapper.ProductInfoMapper.insert - <==    Updates: 1
+2021-01-22 11:10:13.099 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 11:11:11.514 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductInfoMapper.selectPage - ==>  Preparing: SELECT id,name,master_img,min_img,sort_code,sale_quantity,price,sub_title,description,stock,weight,keywords,per_limit,detail_html,sort_no,publish_status,create_time,update_time FROM product_info ORDER BY create_time,sort_no DESC 
+2021-01-22 11:11:11.783 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductInfoMapper.selectPage - ==> Parameters: 
+2021-01-22 11:11:11.812 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductInfoMapper.selectPage - <==      Total: 1
+2021-01-22 11:11:11.886 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductSortMapper.selectOne - ==>  Preparing: SELECT sort_name FROM product_sort WHERE (sort_code = ?) 
+2021-01-22 11:11:11.887 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductSortMapper.selectOne - ==> Parameters: A01(String)
+2021-01-22 11:11:11.888 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductSortMapper.selectOne - <==      Total: 0
+2021-01-22 16:48:50.298 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 16:56:16.715 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 17:27:02.527 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 17:28:01.307 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 17:30:04.705 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 18:05:31.325 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 18:08:57.896 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 18:10:05.811 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-22 18:34:57.693 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1

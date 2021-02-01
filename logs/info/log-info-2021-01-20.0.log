@@ -1,0 +1,897 @@
+2021-01-20 11:19:39.712 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 13396 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 11:19:39.720 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 11:19:39.751 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 11:19:41.084 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 11:19:41.087 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 11:19:41.116 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2021-01-20 11:19:42.225 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 11:19:42.250 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 11:19:42.251 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 11:19:42.251 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 11:19:42.460 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 11:19:42.460 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2662 ms
+2021-01-20 11:19:43.899 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 11:19:44.024 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 11:19:45.462 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 11:19:45.490 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 11:19:45.492 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.0.177:8787
+	Swagger:	http://192.168.0.177:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 11:19:45.492 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 11:19:45.496 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 11:19:45.532 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 11:19:45.781 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 11:19:45.783 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 11:19:45.784 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 11:19:45.804 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 11:19:45.808 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 11:19:45.824 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 11:19:45.833 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 11:19:45.836 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 11:19:45.838 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 11:19:45.850 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 6.889 seconds (JVM running for 8.086)
+2021-01-20 11:19:48.146 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 11:19:48.146 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 11:19:48.148 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-20 11:20:04.200 [http-nio-8787-exec-4] INFO  com.fx.shop.controller.CccController - -------paramWeixinParam(appId=wx7372ceb4c0f2de60, appSecret=fed94910d2f63cc2e1a6a7b6a751fa9a, token=, aesKey=, mchId=1605792423, mchKey=DfsFEfsd12DSAfsd213sdf432asda231, keyPath=30820a9202010330820a5c06092a864886f70d010701a0820a4d04820a4930820a45308204c706092a864886f70d010706a08204b8308204b4020100308204ad06092a864886f70d010701301c060a2a864886f70d010c0106300e040895d5d36eebd523f102020800808204805efe77d4bb247a5596edf5cbb05f1f695329bcbf641b2fc8958ae97e625fbfd09c2d8964c6368d36dfc3a7c4e4d130e1a63e0265c5dd1e2a51b67b18e275bcf2790c1752818a938fa94c14ccb6de92ee474f0a9bbc2fa1b53555be5b22efa436ba2fc53dfa1cc5dbc5bf7dc976747c34144efc76415f88e3227dc67d6f0850ef96a3d7b8359bd5db3d71ba91083876096fcc5e387e4631bbec6931d684ecad9e5ae4b8234667273557fc9bd95abcc127edd949d0790dbfce4cc76f48ab755f7dbdb0022fb37e8cbd1a719c87d9d8f46b94537e75266f00b4a77c9aad3d0cf0a635dadf8950c26b9560f3d2b25d902fc59130edd5a280bde745458d94252059d8ef485f3c5ef7c001f3d4c2d8d9b29f7f655e1776519b0cf946af36982f0d97dd0c92237a4be338b9cde67f490bcdd730a2e49a36b1043287000e1f48f5a0397c93ecb7bb791d6a5dd27e51a2490d534a60c2ee62c53699bc67d48e746a0e9a7a8aaf6c0329a3112d7e8f63ee58e93680a278200841339bde3a65425874ad0259e840d58c2d462cab8bd26c95e69ecd61c417bd88892157a80f6c3f6f093619831e01c7336c1bb9ec06a639ad26b337fc58fa16cb4e2a7d85fda30fe593e3388c41b10ada5befda30997722751a1f0b07fe7f01d70c1d2b9bf656a6544a5be13534b8ab33eeaa9cc35f2a71cd5e27027e46238a94ebbf03505fb460f2c455938e8302b7676578c5aaf5aa147efb09d17249f8c4c5bd3e62d386cbc01167d4272dd696e0843b3c9acce682a9357c935cc022cc4d339b7a56f5f31734245aa365b79740ad90a4b5f26678de618e09d36010b754a6b768939e860cb6a5d108f1d7a61e6360e4b91111f1629bd2cadcfbc7885edb6841aab430ceba4dbc1f611f676e217a93fdc661fb5a18330ab47c910398de2e254dbf86967f7e3c766650a5ac56848895f1aeac1ee4837baea71bd4a07ac91c7bbb0f24756ea9e33191b1dc1fe180bbe76a73521e0d6898bca8e9673f0927c94f36400aa408f39a54de89b8b6b5f443cb1d70bc0ab24518b9e4ea3eaac6084b1fd709b68d3c817a5304427f09eeb15f53ec0586329ef6f16ea52734ac9622fbd3dce32b3c9c379a33f3044926e6cf6dd41d5d6cb92d85945e547934bdcb19499ffb4ac80e0256e3fd1620cbe1e7b1e83e3a00c1a491995a91bd0d2a3779b3e5db34d3d0043af268b47b73523746f250693196f1020d5d7f74f6cfb096d146bc4ebf24a42fd72b48057fb44bad402ce58a36e17b887db076531a7f59decd42682f3128110dc2dc33855a9f67d201d80627659187cda40aed33b522183fa0c03e68cde761e43f05702d792a442d2002accfe660cf4534a8d531c177ae1277cb1c83a6c39be0ab6e46cb11952080597cb220518f737bdc160efc9c29b0893f7108460e5ebc9a92332272e23b1dc0d6a21813745f0c730d12edc35406a6c0228ac6c55e1a6e88a662d2489c4b30b9006936fe2a9c86248174f80257c57d4f9ebe7bf7549064bcda90a03d62dee2589b11fe7038921551d3ab075ee9b2a26f9565d30341e0ab24cbdb132e655a307aaf609cf791e692971a1520e5599c6510ddd30328cf1127187e54f2aaa91490126d3082057606092a864886f70d010701a0820567048205633082055f3082055b060b2a864886f70d010c0a0102a08204ee308204ea301c060a2a864886f70d010c0103300e04080aa73e81eb31359502020800048204c88b9702429f272389e534f054722beda3322cd35dc9ddf96bcc446d91cea4aa2ce48612941c01204e2b516a9554f67d49540065858165d462eb6dd169e5b6d7877df10fc46337e2dc15ad2674929835d33984103c102758b057ac4f417c12f66803d2423cfa938c0098c9fe00ce148d658d2c9ea247c7f83e3097a5dc9b36446bc2a8e79a25abc8c43787b200e605d54303981736878fb1c5ff7801d03b0c7dfdafa30f5f2a4248fe195dc80d7bb11070e109966b77aa75c5f0ea766954b429843701106e835c88310d05af7cf8baa097ca064487f7736e4c7f180537a433d82aa137da9830958dc38c6b4fc91b1a66984dd522ef7963eaf07c4a04cd42e250a6ecca097d053b7d264d0eb6e22686354005de8cd6ba382d587b8dbbf6891bdcf8f71d44c183f3cefbdeb21386caf8af3ff8d33f5a3ebe753b384e6abd13dc484067142eb4b5989b9eba96f5b4788650b988f758f580fa82ebec556d46b403585723a5c888ee1f9b73ab1fccb2d8296f79fea1e61e4177114e3991f6c245ea5c05f67bb065bb7a304b78e291109d1f7a620ff7bf925bc54fbd93bede74b99fee0fb6a42c163493b8c48adae1d821b9834f187c475dc1af65c4fc44cfda7ab1136596803390b38661dbd88f697f20afa522fd2e65e748ceaf44d664cff737a91b813cc5d663848f60e9cfab744f3d46fe656f6f90b66a0518ca91799ee6a6e9d755015a33886e076b4013b7c5478fd9bff7746c171f168f6a47b320726cab1e2beb44aa4a4c51087c11f817bc118b79eafd5cd50595970d35d96c5acc68dc081192d7c4e1f1db9d223255771b5839fa4e72acee50240b8119357c323aac479df9439b334b3b1835628aaa7ab8e9de3db25243ce8b3b2d8c9a30f51585bd45ebf91da3cbcc6b4909e8233ecfe5169c302b5afab73ad79b813c00b22784d977d446a7487d3b893f290aa967cadac8aa43e3097611ba5b0dcfa6e55e8b2e05ae5a2da7940ea29dbb99f0d11250fcfaac1af731c25ffb4df6c7e36cb99dd780a8b5ba1fd3f1c4082091e71d6d7d4857f6e75742e59c99f852641450a622519be14ba68464e58afed9f9c5b473061e7fb358c63fddba3b3989af512b0411e348f48dfed9927eee2d67a397cb1cd42c2824da10042a353157515f65223f8fe078f7a35a3147befbe1d1591eca6f7991077f2cbd5a17d06f0b93edef314f18e659dc64be57d5381cbc9a41a23cedda8a982c87bc8bbc256fbabcb165c97ea31968b62b1fe07c78817b857e93757d24a88687da8d922124ea3c09d06fd9ecdf0637d5ffa3b18ed4e0c3298e4c34aa7c1d1f2b4eca0f9e72559906e4e99fb627c3ffa83a8fb71aa7d855a4fa055f67abdfac06bbb0c2b49fa709a7fd5148c3371f90607fed73c72739ae058dabaa633bdc967d7c0d1a4d7c6009d5a218c811537d683b468165af609f1ffa7ad92c064f250edebec0854af299c16b8856436280c2ab3c9f2bacaed46d204c6c2bd9d608c56b1154b62fd7a1471d7499f528875ac50a190d2dc4619793185c9d527cf0bf577ed884420cb14aa2edbacf0d336fbfcd96befe546548e30a8292fb04072cafa15c039d99250a97c9c1d847cec35db012aeaf19378eb9e5a6700545ca0104dbf7c357f86847ade366481cbb641af8462004ed28ec30438084e001f54e1fe0b9a8b9086ce66d8eb6eae5ae490f115a7b025fb4a6674c94a7c0826f631fc0315a302306092a864886f70d0109153116041441c2c908a315eac518ea151c0f4fb54e5a711e99303306092a864886f70d01091431261e2400540065006e007000610079002000430065007200740069006600690063006100740065302d3021300906052b0e03021a050004141268396bd37688ce8f9f62f7525ce5d9f0f60117040873af5475b97a90c0)
+2021-01-20 11:20:04.602 [http-nio-8787-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-01-20 11:20:04.841 [Druid-ConnectionPool-Create-1910579637] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2021-01-20 11:20:53.309 [Druid-ConnectionPool-Create-1910579637] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is false
+2021-01-20 11:24:24.443 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 11:24:24.445 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-01-20 11:24:24.448 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-01-20 11:24:31.470 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 14316 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 11:24:31.475 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 11:24:31.683 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 11:24:33.616 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 11:24:33.618 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 11:24:33.649 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2021-01-20 11:24:34.282 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 11:24:34.293 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 11:24:34.294 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 11:24:34.294 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 11:24:34.418 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 11:24:34.419 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2822 ms
+2021-01-20 11:24:35.493 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 11:24:35.567 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 11:24:36.323 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 11:24:36.347 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 11:24:36.348 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.0.177:8787
+	Swagger:	http://192.168.0.177:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 11:24:36.349 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 11:24:36.353 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 11:24:36.393 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 11:24:36.627 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 11:24:36.629 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 11:24:36.631 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 11:24:36.652 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 11:24:36.657 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 11:24:36.671 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 11:24:36.681 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 11:24:36.683 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 11:24:36.686 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 11:24:36.698 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 6.341 seconds (JVM running for 10.162)
+2021-01-20 11:24:42.427 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 11:24:42.428 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 11:24:42.430 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-20 11:24:42.468 [http-nio-8787-exec-1] INFO  com.fx.shop.controller.CccController - -------paramWeixinParam(appId=wx7372ceb4c0f2de60, appSecret=fed94910d2f63cc2e1a6a7b6a751fa9a, token=, aesKey=, mchId=1605792423, mchKey=DfsFEfsd12DSAfsd213sdf432asda231, keyPath=30820a9202010330820a5c06092a864886f70d010701a0820a4d04820a4930820a45308204c706092a864886f70d010706a08204b8308204b4020100308204ad06092a864886f70d010701301c060a2a864886f70d010c0106300e040895d5d36eebd523f102020800808204805efe77d4bb247a5596edf5cbb05f1f695329bcbf641b2fc8958ae97e625fbfd09c2d8964c6368d36dfc3a7c4e4d130e1a63e0265c5dd1e2a51b67b18e275bcf2790c1752818a938fa94c14ccb6de92ee474f0a9bbc2fa1b53555be5b22efa436ba2fc53dfa1cc5dbc5bf7dc976747c34144efc76415f88e3227dc67d6f0850ef96a3d7b8359bd5db3d71ba91083876096fcc5e387e4631bbec6931d684ecad9e5ae4b8234667273557fc9bd95abcc127edd949d0790dbfce4cc76f48ab755f7dbdb0022fb37e8cbd1a719c87d9d8f46b94537e75266f00b4a77c9aad3d0cf0a635dadf8950c26b9560f3d2b25d902fc59130edd5a280bde745458d94252059d8ef485f3c5ef7c001f3d4c2d8d9b29f7f655e1776519b0cf946af36982f0d97dd0c92237a4be338b9cde67f490bcdd730a2e49a36b1043287000e1f48f5a0397c93ecb7bb791d6a5dd27e51a2490d534a60c2ee62c53699bc67d48e746a0e9a7a8aaf6c0329a3112d7e8f63ee58e93680a278200841339bde3a65425874ad0259e840d58c2d462cab8bd26c95e69ecd61c417bd88892157a80f6c3f6f093619831e01c7336c1bb9ec06a639ad26b337fc58fa16cb4e2a7d85fda30fe593e3388c41b10ada5befda30997722751a1f0b07fe7f01d70c1d2b9bf656a6544a5be13534b8ab33eeaa9cc35f2a71cd5e27027e46238a94ebbf03505fb460f2c455938e8302b7676578c5aaf5aa147efb09d17249f8c4c5bd3e62d386cbc01167d4272dd696e0843b3c9acce682a9357c935cc022cc4d339b7a56f5f31734245aa365b79740ad90a4b5f26678de618e09d36010b754a6b768939e860cb6a5d108f1d7a61e6360e4b91111f1629bd2cadcfbc7885edb6841aab430ceba4dbc1f611f676e217a93fdc661fb5a18330ab47c910398de2e254dbf86967f7e3c766650a5ac56848895f1aeac1ee4837baea71bd4a07ac91c7bbb0f24756ea9e33191b1dc1fe180bbe76a73521e0d6898bca8e9673f0927c94f36400aa408f39a54de89b8b6b5f443cb1d70bc0ab24518b9e4ea3eaac6084b1fd709b68d3c817a5304427f09eeb15f53ec0586329ef6f16ea52734ac9622fbd3dce32b3c9c379a33f3044926e6cf6dd41d5d6cb92d85945e547934bdcb19499ffb4ac80e0256e3fd1620cbe1e7b1e83e3a00c1a491995a91bd0d2a3779b3e5db34d3d0043af268b47b73523746f250693196f1020d5d7f74f6cfb096d146bc4ebf24a42fd72b48057fb44bad402ce58a36e17b887db076531a7f59decd42682f3128110dc2dc33855a9f67d201d80627659187cda40aed33b522183fa0c03e68cde761e43f05702d792a442d2002accfe660cf4534a8d531c177ae1277cb1c83a6c39be0ab6e46cb11952080597cb220518f737bdc160efc9c29b0893f7108460e5ebc9a92332272e23b1dc0d6a21813745f0c730d12edc35406a6c0228ac6c55e1a6e88a662d2489c4b30b9006936fe2a9c86248174f80257c57d4f9ebe7bf7549064bcda90a03d62dee2589b11fe7038921551d3ab075ee9b2a26f9565d30341e0ab24cbdb132e655a307aaf609cf791e692971a1520e5599c6510ddd30328cf1127187e54f2aaa91490126d3082057606092a864886f70d010701a0820567048205633082055f3082055b060b2a864886f70d010c0a0102a08204ee308204ea301c060a2a864886f70d010c0103300e04080aa73e81eb31359502020800048204c88b9702429f272389e534f054722beda3322cd35dc9ddf96bcc446d91cea4aa2ce48612941c01204e2b516a9554f67d49540065858165d462eb6dd169e5b6d7877df10fc46337e2dc15ad2674929835d33984103c102758b057ac4f417c12f66803d2423cfa938c0098c9fe00ce148d658d2c9ea247c7f83e3097a5dc9b36446bc2a8e79a25abc8c43787b200e605d54303981736878fb1c5ff7801d03b0c7dfdafa30f5f2a4248fe195dc80d7bb11070e109966b77aa75c5f0ea766954b429843701106e835c88310d05af7cf8baa097ca064487f7736e4c7f180537a433d82aa137da9830958dc38c6b4fc91b1a66984dd522ef7963eaf07c4a04cd42e250a6ecca097d053b7d264d0eb6e22686354005de8cd6ba382d587b8dbbf6891bdcf8f71d44c183f3cefbdeb21386caf8af3ff8d33f5a3ebe753b384e6abd13dc484067142eb4b5989b9eba96f5b4788650b988f758f580fa82ebec556d46b403585723a5c888ee1f9b73ab1fccb2d8296f79fea1e61e4177114e3991f6c245ea5c05f67bb065bb7a304b78e291109d1f7a620ff7bf925bc54fbd93bede74b99fee0fb6a42c163493b8c48adae1d821b9834f187c475dc1af65c4fc44cfda7ab1136596803390b38661dbd88f697f20afa522fd2e65e748ceaf44d664cff737a91b813cc5d663848f60e9cfab744f3d46fe656f6f90b66a0518ca91799ee6a6e9d755015a33886e076b4013b7c5478fd9bff7746c171f168f6a47b320726cab1e2beb44aa4a4c51087c11f817bc118b79eafd5cd50595970d35d96c5acc68dc081192d7c4e1f1db9d223255771b5839fa4e72acee50240b8119357c323aac479df9439b334b3b1835628aaa7ab8e9de3db25243ce8b3b2d8c9a30f51585bd45ebf91da3cbcc6b4909e8233ecfe5169c302b5afab73ad79b813c00b22784d977d446a7487d3b893f290aa967cadac8aa43e3097611ba5b0dcfa6e55e8b2e05ae5a2da7940ea29dbb99f0d11250fcfaac1af731c25ffb4df6c7e36cb99dd780a8b5ba1fd3f1c4082091e71d6d7d4857f6e75742e59c99f852641450a622519be14ba68464e58afed9f9c5b473061e7fb358c63fddba3b3989af512b0411e348f48dfed9927eee2d67a397cb1cd42c2824da10042a353157515f65223f8fe078f7a35a3147befbe1d1591eca6f7991077f2cbd5a17d06f0b93edef314f18e659dc64be57d5381cbc9a41a23cedda8a982c87bc8bbc256fbabcb165c97ea31968b62b1fe07c78817b857e93757d24a88687da8d922124ea3c09d06fd9ecdf0637d5ffa3b18ed4e0c3298e4c34aa7c1d1f2b4eca0f9e72559906e4e99fb627c3ffa83a8fb71aa7d855a4fa055f67abdfac06bbb0c2b49fa709a7fd5148c3371f90607fed73c72739ae058dabaa633bdc967d7c0d1a4d7c6009d5a218c811537d683b468165af609f1ffa7ad92c064f250edebec0854af299c16b8856436280c2ab3c9f2bacaed46d204c6c2bd9d608c56b1154b62fd7a1471d7499f528875ac50a190d2dc4619793185c9d527cf0bf577ed884420cb14aa2edbacf0d336fbfcd96befe546548e30a8292fb04072cafa15c039d99250a97c9c1d847cec35db012aeaf19378eb9e5a6700545ca0104dbf7c357f86847ade366481cbb641af8462004ed28ec30438084e001f54e1fe0b9a8b9086ce66d8eb6eae5ae490f115a7b025fb4a6674c94a7c0826f631fc0315a302306092a864886f70d0109153116041441c2c908a315eac518ea151c0f4fb54e5a711e99303306092a864886f70d01091431261e2400540065006e007000610079002000430065007200740069006600690063006100740065302d3021300906052b0e03021a050004141268396bd37688ce8f9f62f7525ce5d9f0f60117040873af5475b97a90c0)
+2021-01-20 11:24:42.613 [http-nio-8787-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-01-20 22:26:36.587 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 22:26:36.729 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 6412 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 22:26:36.743 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 22:26:40.100 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 22:26:40.103 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 22:26:40.173 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2021-01-20 22:26:41.449 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 22:26:41.462 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:26:41.463 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 22:26:41.463 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 22:26:41.688 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 22:26:41.688 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4586 ms
+2021-01-20 22:26:43.556 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 22:26:43.684 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:26:45.041 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:26:45.069 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 22:26:45.071 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 22:26:45.071 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 22:26:45.075 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 22:26:45.109 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:26:45.355 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:26:45.357 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 22:26:45.359 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 22:26:45.376 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 22:26:45.380 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 22:26:45.393 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 22:26:45.401 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 22:26:45.406 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 22:26:45.409 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 22:26:45.411 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 22:26:45.422 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 10.166 seconds (JVM running for 13.249)
+2021-01-20 22:27:27.151 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:27:27.159 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 22:27:33.564 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 22:27:33.563 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 8460 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 22:27:33.568 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 22:27:34.765 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 22:27:34.768 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 22:27:34.804 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2021-01-20 22:27:35.412 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 22:27:35.423 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:27:35.424 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 22:27:35.424 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 22:27:35.607 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 22:27:35.608 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1970 ms
+2021-01-20 22:27:36.962 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 22:27:37.036 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:27:37.753 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:27:37.775 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 22:27:37.777 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 22:27:37.778 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 22:27:37.781 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 22:27:37.815 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:27:38.040 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:27:38.043 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 22:27:38.044 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 22:27:38.063 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 22:27:38.067 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 22:27:38.080 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 22:27:38.089 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 22:27:38.095 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 22:27:38.097 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 22:27:38.099 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 22:27:38.111 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.408 seconds (JVM running for 6.651)
+2021-01-20 22:28:54.142 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 22:28:54.143 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 22:28:54.146 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-20 22:30:30.151 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:30:30.153 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 22:30:33.506 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 7568 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 22:30:33.510 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 22:30:33.586 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 22:30:34.693 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 22:30:34.696 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 22:30:34.745 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021-01-20 22:30:35.348 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 22:30:35.359 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:30:35.360 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 22:30:35.361 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 22:30:35.567 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 22:30:35.567 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1976 ms
+2021-01-20 22:30:37.070 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 22:30:37.142 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:30:37.913 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:30:37.964 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 22:30:37.966 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 22:30:37.967 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 22:30:37.971 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 22:30:38.003 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:30:38.271 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:30:38.273 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 22:30:38.275 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 22:30:38.297 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 22:30:38.302 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 22:30:38.316 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 22:30:38.325 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 22:30:38.333 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 22:30:38.336 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 22:30:38.338 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 22:30:38.351 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.902 seconds (JVM running for 7.4)
+2021-01-20 22:30:40.847 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 22:30:40.848 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 22:30:40.851 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-20 22:31:51.177 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:31:51.179 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 22:31:57.537 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 22:31:57.544 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 1732 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 22:31:57.545 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 22:31:58.792 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 22:31:58.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 22:31:58.850 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021-01-20 22:31:59.449 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 22:31:59.460 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:31:59.460 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 22:31:59.461 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 22:31:59.649 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 22:31:59.649 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2045 ms
+2021-01-20 22:32:01.130 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 22:32:01.222 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:32:01.981 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:32:02.002 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 22:32:02.004 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 22:32:02.005 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 22:32:02.008 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 22:32:02.040 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:32:02.244 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:32:02.246 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 22:32:02.248 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 22:32:02.266 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 22:32:02.269 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 22:32:02.281 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 22:32:02.290 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 22:32:02.296 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 22:32:02.298 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 22:32:02.300 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 22:32:02.311 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.866 seconds (JVM running for 7.139)
+2021-01-20 22:32:07.986 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 22:32:07.987 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 22:32:07.994 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-01-20 22:33:00.609 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:33:00.612 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 22:33:08.770 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 22:33:08.778 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 6444 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 22:33:08.779 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 22:33:10.361 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 22:33:10.365 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 22:33:10.405 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2021-01-20 22:33:11.134 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 22:33:11.145 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:33:11.146 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 22:33:11.146 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 22:33:11.357 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 22:33:11.357 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2515 ms
+2021-01-20 22:33:12.986 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 22:33:13.057 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:33:14.060 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:33:14.082 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 22:33:14.084 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 22:33:14.084 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 22:33:14.088 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 22:33:14.130 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:33:14.389 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 22:33:14.389 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 22:33:14.391 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-20 22:33:14.437 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:33:14.443 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 22:33:14.447 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 22:33:14.484 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 22:33:14.489 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 22:33:14.509 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 22:33:14.525 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 22:33:14.531 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 22:33:14.534 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 22:33:14.537 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 22:33:14.551 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 7.07 seconds (JVM running for 8.81)
+2021-01-20 22:34:06.172 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:34:06.174 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 22:34:12.792 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 22:34:12.807 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 8244 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 22:34:12.809 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 22:34:14.667 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 22:34:14.674 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 22:34:14.747 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+2021-01-20 22:34:15.542 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 22:34:15.559 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:34:15.560 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 22:34:15.560 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 22:34:15.804 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 22:34:15.804 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2912 ms
+2021-01-20 22:34:17.641 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 22:34:17.755 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 22:34:18.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 22:34:18.926 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 22:34:18.928 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 22:34:18.928 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 22:34:18.934 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 22:34:18.990 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:34:19.393 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 22:34:19.395 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 22:34:19.397 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 22:34:19.423 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 22:34:19.427 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 22:34:19.441 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 22:34:19.454 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 22:34:19.461 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 22:34:19.469 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 22:34:19.472 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 22:34:19.475 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 22:34:19.493 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 7.803 seconds (JVM running for 8.969)
+2021-01-20 22:34:25.354 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 22:34:25.354 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 22:34:25.357 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-20 22:34:39.524 [http-nio-8787-exec-9] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <nonce_str>1611153277250</nonce_str>
+  <sign>B5BEB2F4900986A32BBA92C32B6EE56F</sign>
+  <body>123</body>
+  <out_trade_no>123456789</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>192.168.0.177</spbill_create_ip>
+  <notify_url>url</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[mch_id参数格式错误]]></return_msg></xml>
+2021-01-20 22:39:53.973 [http-nio-8787-exec-7] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <nonce_str>1611153593053</nonce_str>
+  <sign>0D21F08A5026991A0A404D7109230BD6</sign>
+  <body>123</body>
+  <out_trade_no>123456789</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>192.168.0.177</spbill_create_ip>
+  <notify_url>url</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[mch_id参数格式错误]]></return_msg></xml>
+2021-01-20 23:06:08.321 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:06:08.324 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 23:06:14.552 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 23:06:14.557 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 1340 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 23:06:14.558 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 23:06:15.857 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 23:06:15.860 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 23:06:15.897 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021-01-20 23:06:16.487 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 23:06:16.497 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:06:16.498 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 23:06:16.498 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 23:06:16.697 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 23:06:16.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2087 ms
+2021-01-20 23:06:18.120 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 23:06:18.190 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:06:18.962 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:06:18.986 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 23:06:18.988 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 23:06:18.988 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 23:06:18.992 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 23:06:19.032 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:06:19.313 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:06:19.316 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 23:06:19.317 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 23:06:19.335 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 23:06:19.338 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 23:06:19.351 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 23:06:19.360 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 23:06:19.366 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 23:06:19.373 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 23:06:19.375 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 23:06:19.377 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 23:06:19.389 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.645 seconds (JVM running for 6.702)
+2021-01-20 23:06:52.860 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:06:52.862 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 23:06:59.346 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 23:06:59.352 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 4344 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 23:06:59.353 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 23:07:00.737 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 23:07:00.740 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 23:07:00.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2021-01-20 23:07:01.442 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 23:07:01.453 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:07:01.455 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 23:07:01.455 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 23:07:01.650 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 23:07:01.650 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2225 ms
+2021-01-20 23:07:03.147 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 23:07:03.292 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:07:04.295 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:07:04.322 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 23:07:04.325 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 23:07:04.325 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 23:07:04.329 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 23:07:04.366 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:07:04.655 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:07:04.657 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 23:07:04.658 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 23:07:04.676 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 23:07:04.680 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 23:07:04.692 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 23:07:04.701 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 23:07:04.706 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 23:07:04.714 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 23:07:04.716 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 23:07:04.718 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 23:07:04.731 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 6.263 seconds (JVM running for 7.41)
+2021-01-20 23:07:58.248 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 23:07:58.248 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 23:07:58.252 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-01-20 23:08:05.270 [http-nio-8787-exec-1] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <nonce_str>1611155283488</nonce_str>
+  <sign>CCFE1FC6426620F2706C79C51F450EB3</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[mch_id参数格式错误]]></return_msg></xml>
+2021-01-20 23:08:05.296 [http-nio-8787-exec-1] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:09:38.540 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:09:38.542 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 23:09:44.630 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 23:09:44.630 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 9112 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 23:09:44.634 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 23:09:45.735 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 23:09:45.739 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 23:09:45.777 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2021-01-20 23:09:46.379 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 23:09:46.390 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:09:46.391 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 23:09:46.391 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 23:09:46.578 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 23:09:46.578 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1890 ms
+2021-01-20 23:09:47.964 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 23:09:48.034 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:09:48.764 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:09:48.787 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 23:09:48.789 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 23:09:48.789 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 23:09:48.793 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 23:09:48.826 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:09:49.041 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:09:49.044 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 23:09:49.046 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 23:09:49.063 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 23:09:49.067 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 23:09:49.079 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 23:09:49.088 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 23:09:49.093 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 23:09:49.100 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 23:09:49.103 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 23:09:49.106 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 23:09:49.118 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.342 seconds (JVM running for 6.483)
+2021-01-20 23:09:55.793 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 23:09:55.793 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 23:09:55.796 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-20 23:09:57.121 [http-nio-8787-exec-1] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <nonce_str>1611155395942</nonce_str>
+  <sign>075C7EDF15331ABD67817BFAB48B35B7</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[mch_id参数格式错误]]></return_msg></xml>
+2021-01-20 23:09:57.147 [http-nio-8787-exec-1] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:11:57.280 [http-nio-8787-exec-3] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@6cfbfec9
+2021-01-20 23:11:59.093 [http-nio-8787-exec-3] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <nonce_str>1611155517281</nonce_str>
+  <sign>3AEF52D25563FB86F7E75F4E0022E5F3</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[mch_id参数格式错误]]></return_msg></xml>
+2021-01-20 23:11:59.101 [http-nio-8787-exec-3] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:18:15.693 [http-nio-8787-exec-5] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@2b11c15e
+2021-01-20 23:18:18.838 [http-nio-8787-exec-5] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <nonce_str>1611155895699</nonce_str>
+  <sign>302F6E51FFEF85918332CBB341368E75</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[mch_id参数格式错误]]></return_msg></xml>
+2021-01-20 23:18:18.846 [http-nio-8787-exec-5] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:20:53.199 [http-nio-8787-exec-7] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@8e98525
+2021-01-20 23:20:58.228 [http-nio-8787-exec-7] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611156053201</nonce_str>
+  <sign>63BCAC035DC1A3F977D260FABB3D9298</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[签名错误]]></return_msg>
+</xml>
+2021-01-20 23:20:58.239 [http-nio-8787-exec-7] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:31:52.057 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:31:52.059 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 23:31:55.053 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 23:31:55.052 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 8392 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 23:31:55.057 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 23:31:56.171 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 23:31:56.174 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 23:31:56.208 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2021-01-20 23:31:56.818 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 23:31:56.830 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:31:56.831 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 23:31:56.831 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 23:31:57.022 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 23:31:57.023 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1889 ms
+2021-01-20 23:31:58.409 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 23:31:58.481 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:31:59.302 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:31:59.324 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 23:31:59.325 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 23:31:59.326 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 23:31:59.329 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 23:31:59.363 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:31:59.601 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:31:59.607 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 23:31:59.608 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 23:31:59.630 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 23:31:59.634 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 23:31:59.648 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 23:31:59.657 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 23:31:59.663 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 23:31:59.669 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 23:31:59.671 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 23:31:59.674 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 23:31:59.685 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.358 seconds (JVM running for 6.79)
+2021-01-20 23:32:02.765 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 23:32:02.765 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 23:32:02.768 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-20 23:32:02.983 [http-nio-8787-exec-1] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@b934ba1
+2021-01-20 23:32:05.929 [http-nio-8787-exec-1] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611156722989</nonce_str>
+  <sign>E087BF52CE4543ACC0C33029859A7D08</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[签名错误]]></return_msg>
+</xml>
+2021-01-20 23:32:05.955 [http-nio-8787-exec-1] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:32:07.290 [http-nio-8787-exec-2] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@5491f705
+2021-01-20 23:32:07.619 [http-nio-8787-exec-2] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611156727292</nonce_str>
+  <sign>02735A082EC61CB473ED754E54C3A974</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[签名错误]]></return_msg>
+</xml>
+2021-01-20 23:32:07.626 [http-nio-8787-exec-2] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:34:03.027 [http-nio-8787-exec-3] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@1312356f
+2021-01-20 23:34:03.818 [http-nio-8787-exec-3] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611156843031</nonce_str>
+  <sign>4C3258FA1B469E9AA3B2EB2A233D6710</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[签名错误]]></return_msg>
+</xml>
+2021-01-20 23:34:03.824 [http-nio-8787-exec-3] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:34:03.988 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:34:03.991 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 23:34:10.399 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 8048 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 23:34:10.404 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 23:34:10.440 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 23:34:11.712 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 23:34:11.715 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 23:34:11.748 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2021-01-20 23:34:12.372 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 23:34:12.382 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:34:12.383 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 23:34:12.384 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 23:34:12.570 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 23:34:12.570 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2066 ms
+2021-01-20 23:34:13.962 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 23:34:14.032 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:34:14.767 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:34:14.789 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 23:34:14.790 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 23:34:14.791 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 23:34:14.794 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 23:34:14.827 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:34:15.040 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:34:15.043 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 23:34:15.045 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 23:34:15.063 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 23:34:15.067 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 23:34:15.081 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 23:34:15.089 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 23:34:15.096 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 23:34:15.102 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 23:34:15.104 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 23:34:15.107 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 23:34:15.118 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.567 seconds (JVM running for 6.611)
+2021-01-20 23:36:35.400 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 23:36:35.401 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 23:36:35.404 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-01-20 23:36:35.508 [http-nio-8787-exec-1] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@44d395b2
+2021-01-20 23:36:47.558 [http-nio-8787-exec-1] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611156995513</nonce_str>
+  <sign>76E964D8F32E0DC308A9995E8D364642</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015110886</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx7372ceb4c0f2de60]]></appid>
+<mch_id><![CDATA[1605792423]]></mch_id>
+<nonce_str><![CDATA[AhpeBXPpYeORE7F0]]></nonce_str>
+<sign><![CDATA[853E371C58ECCE61297D72A3D59301D4]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[INVALID_REQUEST]]></err_code>
+<err_code_des><![CDATA[201 商户订单号重复]]></err_code_des>
+</xml>
+2021-01-20 23:36:47.586 [http-nio-8787-exec-1] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-null
+2021-01-20 23:37:22.619 [http-nio-8787-exec-2] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@70d7abae
+2021-01-20 23:37:23.131 [http-nio-8787-exec-2] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611157042621</nonce_str>
+  <sign>95357F1644E016C4E54E4CD15C6247A0</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015123</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx7372ceb4c0f2de60]]></appid>
+<mch_id><![CDATA[1605792423]]></mch_id>
+<nonce_str><![CDATA[ob5Gnr1ctC7qub8D]]></nonce_str>
+<sign><![CDATA[EB39A02557B35C9AB0D396266D2A02C1]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20233608944811bf5ceddf8cab077c0000]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+2021-01-20 23:37:23.149 [http-nio-8787-exec-2] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-WxPayMpOrderResult(appId=wx7372ceb4c0f2de60, timeStamp=1611157043, nonceStr=1611157043145, packageValue=prepay_id=wx20233608944811bf5ceddf8cab077c0000, signType=MD5, paySign=55E1E0EC04BE8738DDE09DC84FA03EA6)
+2021-01-20 23:45:26.263 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:45:26.265 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-01-20 23:45:35.480 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-20 23:45:35.495 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 7404 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-01-20 23:45:35.497 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-01-20 23:45:36.844 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-20 23:45:36.847 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-20 23:45:36.886 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2021-01-20 23:45:37.478 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-01-20 23:45:37.488 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:45:37.489 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-20 23:45:37.489 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-20 23:45:37.673 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-20 23:45:37.673 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2101 ms
+2021-01-20 23:45:39.052 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-01-20 23:45:39.130 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-20 23:45:39.858 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-01-20 23:45:39.880 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-01-20 23:45:39.883 [main] INFO  com.fx.shop.ShopApplication - 
+---------------------------------------------------------
+	Application is running! Access address:
+	Profile:	
+	Local:		http://localhost:8787
+	External:	http://192.168.85.1:8787
+	Swagger:	http://192.168.85.1:8787/doc.html
+---------------------------------------------------------
+
+2021-01-20 23:45:39.883 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-01-20 23:45:39.888 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-01-20 23:45:39.926 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:45:40.154 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-20 23:45:40.157 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-01-20 23:45:40.158 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: insertUsingPOST_1
+2021-01-20 23:45:40.176 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
+2021-01-20 23:45:40.179 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
+2021-01-20 23:45:40.191 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
+2021-01-20 23:45:40.199 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
+2021-01-20 23:45:40.204 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-01-20 23:45:40.210 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-01-20 23:45:40.212 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-01-20 23:45:40.215 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-01-20 23:45:40.226 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 5.501 seconds (JVM running for 6.567)
+2021-01-20 23:45:45.460 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-20 23:45:45.460 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-01-20 23:45:45.463 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-01-20 23:45:45.563 [http-nio-8787-exec-1] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@4d47804b
+2021-01-20 23:45:48.741 [http-nio-8787-exec-1] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611157545568</nonce_str>
+  <sign>704DE7693B1D71B67CA6EF6F7B64B78E</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015123</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx7372ceb4c0f2de60]]></appid>
+<mch_id><![CDATA[1605792423]]></mch_id>
+<nonce_str><![CDATA[mMNlFmZ84DtVungt]]></nonce_str>
+<sign><![CDATA[F3F1E4FCFFD41F2A5CCEABB2BB2E69A8]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20234434574342bf5ceddf8c1925dc0000]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+2021-01-20 23:45:48.766 [http-nio-8787-exec-1] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-WxPayMpOrderResult(appId=wx7372ceb4c0f2de60, timeStamp=1611157548, nonceStr=1611157548764, packageValue=prepay_id=wx20234434574342bf5ceddf8c1925dc0000, signType=MD5, paySign=432F6BCAC747E17175892A0B077AF6D1)
+2021-01-20 23:45:58.495 [http-nio-8787-exec-2] INFO  WXServiceImpl - ---------------wxPayServicecom.github.binarywang.wxpay.service.impl.WxPayServiceImpl@5491f705
+2021-01-20 23:45:58.833 [http-nio-8787-exec-2] INFO  c.g.binarywang.wxpay.service.impl.WxPayServiceImpl - 
+【请求地址】：https://api.mch.weixin.qq.com/pay/unifiedorder
+【请求数据】：<xml>
+  <appid>wx7372ceb4c0f2de60</appid>
+  <mch_id>1605792423</mch_id>
+  <nonce_str>1611157558497</nonce_str>
+  <sign>F174603AD922A0A57A70609116753231</sign>
+  <body>123</body>
+  <out_trade_no>LSH2021012015123</out_trade_no>
+  <total_fee>1</total_fee>
+  <spbill_create_ip>219.152.50.24</spbill_create_ip>
+  <notify_url>https://pay-test.3yicloud.com/notify/wxpay/wx7372ceb4c0f2de60/shop.pay</notify_url>
+  <trade_type>JSAPI</trade_type>
+  <openid>oeiX_46I8kXn9jaEZl-H_Z3Oz4yM</openid>
+</xml>
+【响应数据】：<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wx7372ceb4c0f2de60]]></appid>
+<mch_id><![CDATA[1605792423]]></mch_id>
+<nonce_str><![CDATA[EgWkheOfMME6H1A0]]></nonce_str>
+<sign><![CDATA[93B8A37BADB3C549DD223BCCCEBAB5E0]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<prepay_id><![CDATA[wx20234444664627bf5ceddf8c785b240000]]></prepay_id>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+</xml>
+2021-01-20 23:45:58.840 [http-nio-8787-exec-2] INFO  com.fx.shop.service.impl.PayServiceImpl - -------------------result-WxPayMpOrderResult(appId=wx7372ceb4c0f2de60, timeStamp=1611157558, nonceStr=1611157558840, packageValue=prepay_id=wx20234444664627bf5ceddf8c785b240000, signType=MD5, paySign=C82D42DF4B9ABBB123C4995FEB9F527E)
