@@ -11,10 +11,14 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+#    url: jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+#    sql-script-encoding: utf-8
+#    username: root
+#    password: root
+    url: jdbc:mysql://8.136.198.103:3306/shop?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     sql-script-encoding: utf-8
     username: root
-    password: root
+    password: 3edc$RFV
     initial-size: 5
     min-idle: 5
     max-active: 10
@@ -32,7 +36,7 @@ spring:
     remove-abandoned: true
     remove-abandoned-timeout: 1800
   redis:
-    host: localhost
+    host: 8.136.198.103
     port: 6379
     timeout: 3000
     # password:
@@ -117,4 +121,5 @@ wx:
 
 
 file:
-  path: F:\\myIdeaspace #本地路径
+#  path: F:\\myIdeaspace #本地路径
+  path: /javaweb/file

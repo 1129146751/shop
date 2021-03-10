@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 
-@Api(tags = "文件")
+@Api(tags = "文件上传")
 @Slf4j
 @RestController
 @RequestMapping("/file")
@@ -22,7 +22,7 @@ public class FileController {
     private FileService fileService;
 
     /**
-     *
+     *文件上传
      * @param file
      * @return
      */

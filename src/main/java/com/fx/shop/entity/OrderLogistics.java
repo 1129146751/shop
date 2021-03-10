@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -90,16 +92,16 @@ public class OrderLogistics implements Serializable {
     private String expressNo;
 
     @ApiModelProperty(value = "发货时间")
-    private LocalDateTime deliveryTime;
+    private Date deliveryTime;
 
     @ApiModelProperty(value = "收货时间")
-    private LocalDateTime receiveTime;
+    private Date receiveTime;
 
     @ApiModelProperty(value = "更新时间")
-    private LocalDateTime createTime;
+    private Date createTime;
 
     @ApiModelProperty(value = "创建时间")
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
 
 }

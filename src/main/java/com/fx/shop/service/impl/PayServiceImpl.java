@@ -1,7 +1,8 @@
 package com.fx.shop.service.impl;
 
-import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.fx.shop.dto.notify.WxPayNotifyCheckRequest;
+import com.fx.shop.dto.notify.WxPayNotifyOrderResponse;
 import com.fx.shop.dto.pay.req.CreatePayReq;
 import com.fx.shop.dto.pay.req.WxPayRefundReq;
 import com.fx.shop.dto.pay.resp.CreatePayResp;
@@ -14,6 +15,8 @@ import com.fx.shop.service.PayService;
 import com.fx.shop.service.WXService;
 import com.fx.shop.util.state.StateUtil;
 import com.fx.shop.util.web.WebUtil;
+import com.github.binarywang.wxpay.bean.notify.WxPayNotifyResponse;
+import com.github.binarywang.wxpay.bean.notify.WxPayOrderNotifyResult;
 import com.github.binarywang.wxpay.bean.order.WxPayMpOrderResult;
 import com.github.binarywang.wxpay.bean.request.WxPayRefundRequest;
 import com.github.binarywang.wxpay.bean.request.WxPayUnifiedOrderRequest;
@@ -22,10 +25,13 @@ import com.github.binarywang.wxpay.constant.WxPayConstants;
 import com.github.binarywang.wxpay.exception.WxPayException;
 import com.sineyun.commons.core.exception.CustomException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.Date;
+import java.util.Map;
 
 @Slf4j
 @Service
@@ -52,7 +58,7 @@ public class PayServiceImpl implements PayService {
         if(null!=orderInfo){
             throw new CustomException("订单不存在,请联系管理员!");
         }
-        if(StateUtil.payStatus0!=orderInfo.getPayStatus()){
+        if(StateUtil.orderStatus.os0!=orderInfo.getOrderStatus()){
             throw new CustomException("订单不存在,请联系管理员!");
         }
         CustomerUser user=userService.getById(orderInfo.getUserId());
@@ -95,9 +101,7 @@ public class PayServiceImpl implements PayService {
         if(null==orderInfo){
             throw  new CustomException("错误的订单信息,请联系管理员!");
         }
-        if(StateUtil.payStatus1!=orderInfo.getPayStatus()){
-            throw  new CustomException("订单支付状态有误,请联系管理员!");
-        }
+
         CustomerUser user=userService.getById(orderInfo.getUserId());
         if(null==user){
             throw  new CustomException("错误的登录人信息,请联系管理员!");
@@ -119,5 +123,70 @@ public class PayServiceImpl implements PayService {
         if(!"SUCCESS".equalsIgnoreCase(msg)){
             throw  new CustomException("退款失败,请联系管理员!");
         }
+    }
+    /**
+     * 微信支付回调参数解析校验接口
+     *
+     * @param request
+     */
+    @Override
+    public WxPayNotifyOrderResponse validateNotifyParam(WxPayNotifyCheckRequest request) {
+        if (request == null || StringUtils.isBlank(request.getAppId())) {
+            throw new CustomException( "appId为空");
+        }
+        if (StringUtils.isBlank(request.getXmlStr())) {
+            throw new CustomException("xmlStr为空");
+        }
+
+        WxPayNotifyOrderResponse resp = new WxPayNotifyOrderResponse();
+        try {
+            WxPayOrderNotifyResult result = wxService.getWxPayService(request.getAppId())
+                    .parseOrderNotifyResult(request.getXmlStr());
+
+            resp.setOrderNo(result.getOutTradeNo());
+            resp.setTotalFee(result.getTotalFee().longValue());
+            resp.setTransactionId(result.getTransactionId());
+            resp.setSuccess(true);
+            resp.setResultXml(WxPayNotifyResponse.success("OK"));
+        } catch (Exception e) {
+            log.error("微信回调结果异常,异常原因{}", e.getMessage());
+            resp.setSuccess(false);
+            resp.setResultXml(WxPayNotifyResponse.fail("ERROR"));
+        }
+
+        return resp;
+    }
+
+    /**
+     * 支付成功回调
+     * @param notifyOrder
+     */
+    @Override
+    public void payNotify(WxPayNotifyOrderResponse notifyOrder) {
+        String orderNo=notifyOrder.getOrderNo();
+        QueryWrapper<OrderInfo> infoQueryWrapper=new QueryWrapper<>();
+        infoQueryWrapper.eq("order_no",orderNo);
+        OrderInfo orderInfo=orderService.getOne(infoQueryWrapper);
+        if(null==orderInfo){
+            throw new RuntimeException("错误的订单信息,请联系管理员!");
+        }
+        Integer orderStatus=orderInfo.getOrderStatus();
+        //TODO 已支付
+        if(StateUtil.orderStatus.os1==orderStatus){
+            log.info("------------订单已经支付"+orderNo);
+            return;
+        }
+        //TODO  待支付
+        if(StateUtil.orderStatus.os0!=orderStatus){
+            throw new RuntimeException("错误的订单状态,请联系管理员!");
+        }
+        String tradeNo=notifyOrder.getTransactionId();
+        OrderInfo info=new OrderInfo();
+        info.setId(orderInfo.getId());
+        info.setOrderStatus(StateUtil.orderStatus.os1);
+        info.setPayType(StateUtil.payType.pt1);
+        info.setTradeNo(tradeNo);
+        info.setPayTime(new Date());
+        orderService.updateById(info);
     }
 }

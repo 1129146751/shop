@@ -3,8 +3,9 @@ package com.fx.shop.entity;
 import java.math.BigDecimal;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
 import java.io.Serializable;
+import java.util.Date;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -35,8 +36,8 @@ public class OrderInfo implements Serializable {
     @ApiModelProperty(value = "下单人id")
     private Long userId;
 
-    @ApiModelProperty(value = "配送状态（-1:已取消 0:待配送 1:配送中 2:已完成）")
-    private Integer trackingStatus;
+    @ApiModelProperty(value = "配送状态（-1:已取消 0:待支付 1:待发货 2:待收货,3 完成 4 已经退款）")
+    private Integer orderStatus;
 
     @ApiModelProperty(value = "订单总重量")
     private BigDecimal totalWeight;
@@ -53,14 +54,18 @@ public class OrderInfo implements Serializable {
     @ApiModelProperty(value = "优惠金额，预留")
     private BigDecimal discountAmount;
 
-    @ApiModelProperty(value = "支付状态，-1：已失效，0：待支付，1：已支付，2：待退款，3：退款中，4：已退款，5：部分退款")
-    private Integer payStatus;
+    @ApiModelProperty(value = "总金额")
+    private BigDecimal totalAmount;
+
+
+    @ApiModelProperty(value = "积分数")
+    private Integer integralAmount;
 
     @ApiModelProperty(value = "实付款")
     private BigDecimal payAmount;
 
     @ApiModelProperty(value = "支付时间")
-    private LocalDateTime payTime;
+    private Date payTime;
 
     @ApiModelProperty(value = "支付方式，1微信，2支付宝，3网银")
     private Integer payType;
@@ -75,7 +80,7 @@ public class OrderInfo implements Serializable {
     private Long logisticsId;
 
     @ApiModelProperty(value = "失效时间")
-    private LocalDateTime failureTime;
+    private Date failureTime;
 
     @ApiModelProperty(value = "失效原因")
     private String failureReason;
@@ -84,7 +89,7 @@ public class OrderInfo implements Serializable {
     private String refundReason;
 
     @ApiModelProperty(value = "退款时间")
-    private LocalDateTime refundTime;
+    private Date refundTime;
 
     @ApiModelProperty(value = "退款失败原因")
     private String refundFailReason;
@@ -102,10 +107,10 @@ public class OrderInfo implements Serializable {
     private String remark;
 
     @ApiModelProperty(value = "更新时间")
-    private LocalDateTime createTime;
+    private Date createTime;
 
     @ApiModelProperty(value = "创建时间")
-    private LocalDateTime updateTime;
+    private Date updateTime;
 
 
 }

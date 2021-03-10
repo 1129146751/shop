@@ -10,6 +10,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Set;
 
 /**
  * <p>
@@ -29,8 +30,8 @@ public class QueryReq extends BasePageReq {
     @ApiModelProperty(value = "商品名称/副标题")
     private String name;
 
-    @ApiModelProperty(value = "商品属性分类编码")
-    private String sortCode;
+    @ApiModelProperty(value = "商品属性ids")
+    private Set<Long> sortIds;
 
     @ApiModelProperty(value = "上架状态：0->售罄；1->上架；2->仓库")
     private Integer publishStatus;

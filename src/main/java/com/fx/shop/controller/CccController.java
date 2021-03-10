@@ -5,6 +5,7 @@ import com.fx.shop.dto.wx.WeixinParam;
 import com.fx.shop.service.CccService;
 import com.fx.shop.util.jwt.JwtUtil;
 import com.fx.shop.util.redis.RedisUtil;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -25,6 +26,7 @@ import java.util.Map;
  * @author fx
  * @since 2021-01-19
  */
+@Api(tags = "测试")
 @Slf4j
 @RestController
 @RequestMapping("/shop/ccc")

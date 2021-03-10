@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Set;
 
 /**
  * <p>
@@ -56,8 +57,8 @@ public class AddReq implements Serializable {
     @ApiModelProperty(value = "商品描述，富文本",required = true)
     private String description;
 
-    @NotNull(message = "NotNull不能为空")
-    @ApiModelProperty(value = "NotNull",required = true)
+    @NotNull(message = "库存不能为空")
+    @ApiModelProperty(value = "库存",required = true)
     private Integer stock;
 
     @ApiModelProperty(value = "商品重量，默认为克")
@@ -66,16 +67,32 @@ public class AddReq implements Serializable {
     @ApiModelProperty(value = "关键字")
     private String keywords;
 
-    @ApiModelProperty(value = "限购数量")
+    @NotNull(message = "限购数量不能为空")
+    @ApiModelProperty(value = "限购数量",required = true)
     private Integer perLimit;
 
-   /* @ApiModelProperty(value = "产品详情网页内容")
-    private String detailHtml;*/
+    @NotNull(message = "是否支持积分抵扣现金不能为空")
+    @ApiModelProperty(value = "是否支持积分抵扣现金（1是，0否）",required = true)
+    private Integer integralStatus;
+
+    @ApiModelProperty(value = "转换比 (购买商品多少积分可以抵扣一块钱)")
+    private Float integralRatio;
+
+    @ApiModelProperty(value = "购买商品获得的积分")
+    private Integer integralGain;
+
+    @NotNull(message = "是否支持优惠券不能为空")
+    @ApiModelProperty(value = "是否支持优惠券（1是，0否）",required = true)
+    private Integer couponStatus;
 
     @ApiModelProperty(value = "排序")
     private Integer sortNo;
 
+/*    @NotNull(message = "商品分类ids不能为空")
+    @ApiModelProperty(value = "商品分类ids",required = true)
+    private Set<Long> sortIds;
 
-
-
+    @NotNull(message = "优惠券ids不能为空")
+    @ApiModelProperty(value = "优惠券ids",required = true)
+    private Set<Long> couponIds;*/
 }

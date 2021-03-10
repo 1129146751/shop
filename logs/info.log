@@ -1,135 +1,165 @@
-2021-02-01 14:38:57.513 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 14140 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
-2021-02-01 14:38:57.605 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
-2021-02-01 14:38:57.697 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-02-01 14:38:59.910 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-02-01 14:38:59.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-02-01 14:38:59.985 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 0 Redis repository interfaces.
-2021-02-01 14:39:00.373 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.fx.shop.config.RedisConfig$$EnhancerBySpringCGLIB$$db0d4ad9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-02-01 14:39:00.802 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
-2021-02-01 14:39:00.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
-2021-02-01 14:39:00.814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-02-01 14:39:00.815 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-01 14:39:00.950 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-02-01 14:39:00.951 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3177 ms
-2021-02-01 14:39:03.007 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-02-01 14:39:03.087 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-01 14:39:03.643 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
-2021-02-01 14:39:03.666 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
-2021-02-01 14:39:03.668 [main] INFO  com.fx.shop.ShopApplication - 
+2021-03-10 21:15:07.939 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 8172 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-03-10 21:15:07.946 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-03-10 21:15:07.955 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-03-10 21:15:09.147 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-10 21:15:09.150 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-03-10 21:15:09.193 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2021-03-10 21:15:09.521 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.fx.shop.config.RedisConfig$$EnhancerBySpringCGLIB$$dc2e9ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-10 21:15:09.912 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-03-10 21:15:09.923 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-03-10 21:15:09.924 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-10 21:15:09.924 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-03-10 21:15:10.041 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-10 21:15:10.042 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2025 ms
+2021-03-10 21:15:12.286 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-03-10 21:15:12.370 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-10 21:15:12.880 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-03-10 21:15:12.903 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-03-10 21:15:12.905 [main] INFO  com.fx.shop.ShopApplication - 
 ---------------------------------------------------------
 	Application is running! Access address:
 	Profile:	
 	Local:		http://localhost:8787
-	External:	http://192.168.0.177:8787
-	Swagger:	http://192.168.0.177:8787/doc.html
+	External:	http://192.168.0.199:8787
+	Swagger:	http://192.168.0.199:8787/doc.html
 ---------------------------------------------------------
 
-2021-02-01 14:39:03.668 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-02-01 14:39:03.672 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
-2021-02-01 14:39:03.709 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-02-01 14:39:03.995 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_1
-2021-02-01 14:39:04.001 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
-2021-02-01 14:39:04.007 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_1
-2021-02-01 14:39:04.021 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_2
-2021-02-01 14:39:04.025 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_2
-2021-02-01 14:39:04.029 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_2
-2021-02-01 14:39:04.043 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_3
-2021-02-01 14:39:04.051 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_3
-2021-02-01 14:39:04.065 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-02-01 14:39:04.068 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
-2021-02-01 14:39:04.069 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: method1UsingPOST_1
-2021-02-01 14:39:04.083 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
-2021-02-01 14:39:04.086 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
-2021-02-01 14:39:04.097 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
-2021-02-01 14:39:04.104 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
-2021-02-01 14:39:04.114 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_4
-2021-02-01 14:39:04.119 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_4
-2021-02-01 14:39:04.122 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_3
-2021-02-01 14:39:04.124 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_1
-2021-02-01 14:39:04.129 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
-2021-02-01 14:39:04.136 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxMiniappDecodeUsingPOST_1
-2021-02-01 14:39:04.141 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
-2021-02-01 14:39:04.143 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxRefundUsingPOST_1
-2021-02-01 14:39:04.155 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_5
-2021-02-01 14:39:04.160 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_5
-2021-02-01 14:39:04.165 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_4
-2021-02-01 14:39:04.173 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_6
-2021-02-01 14:39:04.176 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_6
-2021-02-01 14:39:04.180 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_5
-2021-02-01 14:39:04.182 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
-2021-02-01 14:39:04.184 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
-2021-02-01 14:39:04.187 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_7
-2021-02-01 14:39:04.192 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_7
-2021-02-01 14:39:04.206 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 7.864 seconds (JVM running for 9.77)
-2021-02-01 14:39:21.499 [http-nio-8787-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-01 14:39:21.500 [http-nio-8787-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-02-01 14:39:21.502 [http-nio-8787-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2021-02-01 14:51:16.821 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
-2021-02-01 14:51:16.830 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-02-01 14:51:30.808 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-02-01 14:51:30.808 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 9188 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
-2021-02-01 14:51:30.812 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
-2021-02-01 14:51:31.993 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-2021-02-01 14:51:31.997 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2021-02-01 14:51:32.051 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
-2021-02-01 14:51:32.370 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.fx.shop.config.RedisConfig$$EnhancerBySpringCGLIB$$daf31a69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-02-01 14:51:32.710 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
-2021-02-01 14:51:32.814 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
-2021-02-01 14:51:32.814 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-02-01 14:51:32.815 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
-2021-02-01 14:51:32.940 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-02-01 14:51:32.940 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2073 ms
-2021-02-01 14:51:35.148 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-2021-02-01 14:51:35.231 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-01 14:51:35.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
-2021-02-01 14:51:35.843 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
-2021-02-01 14:51:35.845 [main] INFO  com.fx.shop.ShopApplication - 
+2021-03-10 21:15:12.905 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-03-10 21:15:12.909 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-03-10 21:15:12.945 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-10 21:15:13.136 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_1
+2021-03-10 21:15:13.143 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+2021-03-10 21:15:13.150 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_1
+2021-03-10 21:15:13.154 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_1
+2021-03-10 21:15:13.200 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_2
+2021-03-10 21:15:13.211 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_2
+2021-03-10 21:15:13.230 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_2
+2021-03-10 21:15:13.248 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_3
+2021-03-10 21:15:13.255 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_3
+2021-03-10 21:15:13.263 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_3
+2021-03-10 21:15:13.277 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_4
+2021-03-10 21:15:13.281 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_4
+2021-03-10 21:15:13.286 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_4
+2021-03-10 21:15:13.290 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_5
+2021-03-10 21:15:13.305 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_6
+2021-03-10 21:15:13.315 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_5
+2021-03-10 21:15:13.329 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-10 21:15:13.332 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-03-10 21:15:13.333 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: method1UsingPOST_1
+2021-03-10 21:15:13.344 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_2
+2021-03-10 21:15:13.355 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_6
+2021-03-10 21:15:13.362 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_7
+2021-03-10 21:15:13.367 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_5
+2021-03-10 21:15:13.378 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_7
+2021-03-10 21:15:13.383 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_8
+2021-03-10 21:15:13.386 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_6
+2021-03-10 21:15:13.389 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_3
+2021-03-10 21:15:13.395 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-03-10 21:15:13.404 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxMiniappDecodeUsingPOST_1
+2021-03-10 21:15:13.423 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_8
+2021-03-10 21:15:13.432 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-03-10 21:15:13.435 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_7
+2021-03-10 21:15:13.445 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-03-10 21:15:13.450 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxRefundUsingPOST_1
+2021-03-10 21:15:13.454 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_9
+2021-03-10 21:15:13.469 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_9
+2021-03-10 21:15:13.475 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_10
+2021-03-10 21:15:13.482 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_8
+2021-03-10 21:15:13.492 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_10
+2021-03-10 21:15:13.495 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_11
+2021-03-10 21:15:13.499 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_9
+2021-03-10 21:15:13.503 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_12
+2021-03-10 21:15:13.507 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-03-10 21:15:13.509 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-03-10 21:15:13.512 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_13
+2021-03-10 21:15:13.514 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: delUsingPOST_1
+2021-03-10 21:15:13.519 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_11
+2021-03-10 21:15:13.532 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 6.211 seconds (JVM running for 9.508)
+2021-03-10 21:15:30.968 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-10 21:15:30.968 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-10 21:15:30.972 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-03-10 21:16:00.127 [http-nio-8787-exec-10] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-10 21:21:19.932 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-10 21:21:19.935 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-10 21:21:19.942 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-10 21:21:24.614 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-03-10 21:21:24.624 [main] INFO  com.fx.shop.ShopApplication - Starting ShopApplication using Java 1.8.0_152 on AUTOBVT-K8KUTA7 with PID 2136 (F:\myIdeaspace\shop\target\classes started by Administrator in F:\myIdeaspace\shop)
+2021-03-10 21:21:24.625 [main] INFO  com.fx.shop.ShopApplication - No active profile set, falling back to default profiles: default
+2021-03-10 21:21:25.889 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-10 21:21:25.891 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-03-10 21:21:25.949 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2021-03-10 21:21:26.270 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.fx.shop.config.RedisConfig$$EnhancerBySpringCGLIB$$85618904] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-10 21:21:26.678 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2021-03-10 21:21:26.688 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2021-03-10 21:21:26.689 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-10 21:21:26.690 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-03-10 21:21:26.809 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-10 21:21:26.810 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2102 ms
+2021-03-10 21:21:28.825 [main] INFO  s.d.s.w.WebMvcPropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2021-03-10 21:21:28.905 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-10 21:21:29.417 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2021-03-10 21:21:29.440 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2021-03-10 21:21:29.442 [main] INFO  com.fx.shop.ShopApplication - 
 ---------------------------------------------------------
 	Application is running! Access address:
 	Profile:	
 	Local:		http://localhost:8787
-	External:	http://192.168.0.177:8787
-	Swagger:	http://192.168.0.177:8787/doc.html
+	External:	http://192.168.0.199:8787
+	Swagger:	http://192.168.0.199:8787/doc.html
 ---------------------------------------------------------
 
-2021-02-01 14:51:35.846 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
-2021-02-01 14:51:35.850 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
-2021-02-01 14:51:35.893 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-02-01 14:51:36.196 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_1
-2021-02-01 14:51:36.202 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
-2021-02-01 14:51:36.210 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_1
-2021-02-01 14:51:36.226 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_2
-2021-02-01 14:51:36.230 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_2
-2021-02-01 14:51:36.235 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_2
-2021-02-01 14:51:36.250 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_3
-2021-02-01 14:51:36.263 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_3
-2021-02-01 14:51:36.279 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-02-01 14:51:36.282 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
-2021-02-01 14:51:36.283 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: method1UsingPOST_1
-2021-02-01 14:51:36.300 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: appointPickUpUsingPOST_1
-2021-02-01 14:51:36.304 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicCancelUsingPOST_1
-2021-02-01 14:51:36.315 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: electronicSheetUsingPOST_1
-2021-02-01 14:51:36.323 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: visitPickUpUsingPOST_1
-2021-02-01 14:51:36.334 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_4
-2021-02-01 14:51:36.339 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_4
-2021-02-01 14:51:36.343 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_3
-2021-02-01 14:51:36.345 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_1
-2021-02-01 14:51:36.350 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
-2021-02-01 14:51:36.358 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxMiniappDecodeUsingPOST_1
-2021-02-01 14:51:36.364 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
-2021-02-01 14:51:36.367 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxRefundUsingPOST_1
-2021-02-01 14:51:36.380 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_5
-2021-02-01 14:51:36.385 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_5
-2021-02-01 14:51:36.390 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_4
-2021-02-01 14:51:36.401 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_6
-2021-02-01 14:51:36.405 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_6
-2021-02-01 14:51:36.408 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_5
-2021-02-01 14:51:36.410 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
-2021-02-01 14:51:36.413 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
-2021-02-01 14:51:36.418 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_7
-2021-02-01 14:51:36.420 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: delUsingPOST_1
-2021-02-01 14:51:36.426 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_7
-2021-02-01 14:51:36.438 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 6.561 seconds (JVM running for 8.499)
-2021-02-01 14:52:11.752 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-01 14:52:11.752 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2021-02-01 14:52:11.756 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2021-03-10 21:21:29.443 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Documentation plugins bootstrapped
+2021-03-10 21:21:29.447 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+2021-03-10 21:21:29.486 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-10 21:21:29.681 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_1
+2021-03-10 21:21:29.686 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_1
+2021-03-10 21:21:29.691 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_1
+2021-03-10 21:21:29.694 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_1
+2021-03-10 21:21:29.735 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_2
+2021-03-10 21:21:29.748 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_2
+2021-03-10 21:21:29.768 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_2
+2021-03-10 21:21:29.786 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_3
+2021-03-10 21:21:29.794 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_3
+2021-03-10 21:21:29.802 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_3
+2021-03-10 21:21:29.816 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_4
+2021-03-10 21:21:29.820 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_4
+2021-03-10 21:21:29.824 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_4
+2021-03-10 21:21:29.828 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_5
+2021-03-10 21:21:29.844 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_6
+2021-03-10 21:21:29.853 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_5
+2021-03-10 21:21:29.867 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-10 21:21:29.870 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: methodUsingPOST_1
+2021-03-10 21:21:29.871 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: method1UsingPOST_1
+2021-03-10 21:21:29.882 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_2
+2021-03-10 21:21:29.898 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_6
+2021-03-10 21:21:29.905 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_7
+2021-03-10 21:21:29.909 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_5
+2021-03-10 21:21:29.921 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_7
+2021-03-10 21:21:29.926 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_8
+2021-03-10 21:21:29.929 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_6
+2021-03-10 21:21:29.932 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: uploadUsingPOST_3
+2021-03-10 21:21:29.937 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: getOpenIdUsingPOST_1
+2021-03-10 21:21:29.947 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxMiniappDecodeUsingPOST_1
+2021-03-10 21:21:29.963 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_8
+2021-03-10 21:21:29.967 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createUsingPOST_1
+2021-03-10 21:21:29.971 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_7
+2021-03-10 21:21:29.977 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: createWxPayUsingPOST_1
+2021-03-10 21:21:29.980 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: wxRefundUsingPOST_1
+2021-03-10 21:21:29.983 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_9
+2021-03-10 21:21:29.998 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_9
+2021-03-10 21:21:30.004 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_10
+2021-03-10 21:21:30.013 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_8
+2021-03-10 21:21:30.025 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_10
+2021-03-10 21:21:30.031 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_11
+2021-03-10 21:21:30.035 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: editUsingPOST_9
+2021-03-10 21:21:30.039 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_12
+2021-03-10 21:21:30.043 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: commonlyListUsingGET_1
+2021-03-10 21:21:30.045 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: immediateQueryUsingGET_1
+2021-03-10 21:21:30.048 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: addUsingPOST_13
+2021-03-10 21:21:30.051 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: delUsingPOST_1
+2021-03-10 21:21:30.056 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: queryUsingPOST_11
+2021-03-10 21:21:30.070 [main] INFO  com.fx.shop.ShopApplication - Started ShopApplication in 6.417 seconds (JVM running for 7.612)
+2021-03-10 21:21:42.745 [http-nio-8787-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-10 21:21:42.745 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-10 21:21:42.749 [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2021-03-10 21:21:43.946 [http-nio-8787-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

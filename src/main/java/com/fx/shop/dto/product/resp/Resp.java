@@ -83,5 +83,10 @@ public class Resp implements Serializable {
     @ApiModelProperty(value = "创建时间")
     private Date updateTime;
 
+    //TODO 优惠券信息
+
+    @ApiModelProperty(value = "优惠券信息")
+    private String coupon;
+
 
 }

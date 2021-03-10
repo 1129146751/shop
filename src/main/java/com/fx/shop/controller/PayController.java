@@ -1,5 +1,6 @@
 package com.fx.shop.controller;
 
+import cn.hutool.core.bean.BeanUtil;
 import com.fx.shop.dto.pay.req.CreatePayReq;
 import com.fx.shop.dto.pay.req.WxPayRefundReq;
 import com.fx.shop.dto.pay.resp.CreatePayResp;
@@ -9,11 +10,12 @@ import com.sineyun.commons.core.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Map;
 
 /**
  * <p>
@@ -50,4 +52,5 @@ public class PayController {
         payService.wxRefund(req);
         return  ApiResult.success();
     }
+
 }

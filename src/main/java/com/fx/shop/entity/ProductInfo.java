@@ -76,6 +76,18 @@ public class ProductInfo implements Serializable {
     @ApiModelProperty(value = "上架状态：0->售罄；1->上架；2->仓库")
     private Integer publishStatus;
 
+    @ApiModelProperty(value = "是否支持积分抵扣现金（1是，0否）")
+    private Integer integralStatus;
+
+    @ApiModelProperty(value = "转换比 (购买商品一块钱需要多少积分)")
+    private Float integralRatio;
+
+    @ApiModelProperty(value = "购买商品获得的积分")
+    private Integer integralGain;
+
+    @ApiModelProperty(value = "是否支持优惠券（1是，0否）")
+    private Integer couponStatus;
+
     @ApiModelProperty(value = "更新时间")
     private Date createTime;
 

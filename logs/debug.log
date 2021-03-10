@@ -1,2 +1,14 @@
-2021-02-01 14:38:57.565 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
-2021-02-01 14:51:30.811 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-03-10 21:15:07.945 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-03-10 21:16:00.929 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductSortMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM product_sort 
+2021-03-10 21:16:00.954 [http-nio-8787-exec-10] DEBUG com.fx.shop.mapper.ProductSortMapper.selectPage - ==> Parameters: 
+2021-03-10 21:16:59.786 [http-nio-8787-exec-5] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM order_info 
+2021-03-10 21:16:59.786 [http-nio-8787-exec-5] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==> Parameters: 
+2021-03-10 21:16:59.841 [http-nio-8787-exec-5] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==>  Preparing: SELECT id,order_no,user_id,order_status,total_weight,product_total_amount,freight_amount,other_amount,discount_amount,total_amount,integral_amount,pay_amount,pay_time,pay_type,distribut_type,address_id,logistics_id,failure_time,failure_reason,refund_reason,refund_time,refund_fail_reason,refund_amount,out_trade_no,trade_no,remark,create_time,update_time FROM order_info LIMIT ?,? 
+2021-03-10 21:16:59.843 [http-nio-8787-exec-5] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2021-03-10 21:16:59.888 [http-nio-8787-exec-5] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - <==      Total: 1
+2021-03-10 21:21:24.625 [main] DEBUG com.fx.shop.ShopApplication - Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-03-10 21:21:44.543 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==>  Preparing: SELECT COUNT(1) FROM order_info 
+2021-03-10 21:21:44.567 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==> Parameters: 
+2021-03-10 21:21:44.635 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==>  Preparing: SELECT id,order_no,user_id,order_status,total_weight,product_total_amount,freight_amount,other_amount,discount_amount,total_amount,integral_amount,pay_amount,pay_time,pay_type,distribut_type,address_id,logistics_id,failure_time,failure_reason,refund_reason,refund_time,refund_fail_reason,refund_amount,out_trade_no,trade_no,remark,create_time,update_time FROM order_info LIMIT ?,? 
+2021-03-10 21:21:44.636 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - ==> Parameters: 0(Long), 10(Long)
+2021-03-10 21:21:44.686 [http-nio-8787-exec-1] DEBUG com.fx.shop.mapper.OrderInfoMapper.selectPage - <==      Total: 1
