@@ -23,7 +23,7 @@ import com.github.binarywang.wxpay.bean.request.WxPayUnifiedOrderRequest;
 import com.github.binarywang.wxpay.bean.result.WxPayRefundResult;
 import com.github.binarywang.wxpay.constant.WxPayConstants;
 import com.github.binarywang.wxpay.exception.WxPayException;
-import com.sineyun.commons.core.exception.CustomException;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,14 +56,14 @@ public class PayServiceImpl implements PayService {
         infoQueryWrapper.eq("order_no",orderNo);
         OrderInfo orderInfo=orderService.getOne(infoQueryWrapper);
         if(null!=orderInfo){
-            throw new CustomException("订单不存在,请联系管理员!");
+            throw new    RuntimeException("订单不存在,请联系管理员!");
         }
         if(StateUtil.orderStatus.os0!=orderInfo.getOrderStatus()){
-            throw new CustomException("订单不存在,请联系管理员!");
+            throw new    RuntimeException("订单不存在,请联系管理员!");
         }
         CustomerUser user=userService.getById(orderInfo.getUserId());
         if(null==user){
-            throw  new CustomException("错误的登录人信息,请联系管理员!");
+            throw  new    RuntimeException("错误的登录人信息,请联系管理员!");
         }
         WxPayUnifiedOrderRequest payUnifiedOrder = new WxPayUnifiedOrderRequest();
         payUnifiedOrder.setBody("订单支付");
@@ -99,12 +99,12 @@ public class PayServiceImpl implements PayService {
         infoQueryWrapper.eq("order_no",orderNo);
         OrderInfo orderInfo=orderService.getOne(infoQueryWrapper);
         if(null==orderInfo){
-            throw  new CustomException("错误的订单信息,请联系管理员!");
+            throw  new    RuntimeException("错误的订单信息,请联系管理员!");
         }
 
         CustomerUser user=userService.getById(orderInfo.getUserId());
         if(null==user){
-            throw  new CustomException("错误的登录人信息,请联系管理员!");
+            throw  new    RuntimeException("错误的登录人信息,请联系管理员!");
         }
         Integer totalFee=new BigDecimal(orderInfo.getPayAmount().toString()).multiply(new BigDecimal("100")).intValue();
         payRefundRequest.setOutTradeNo(orderNo);
@@ -121,7 +121,7 @@ public class PayServiceImpl implements PayService {
         log.debug("refund result==>{}", result);
         String msg=result.getReturnMsg();
         if(!"SUCCESS".equalsIgnoreCase(msg)){
-            throw  new CustomException("退款失败,请联系管理员!");
+            throw  new    RuntimeException("退款失败,请联系管理员!");
         }
     }
     /**
@@ -132,10 +132,10 @@ public class PayServiceImpl implements PayService {
     @Override
     public WxPayNotifyOrderResponse validateNotifyParam(WxPayNotifyCheckRequest request) {
         if (request == null || StringUtils.isBlank(request.getAppId())) {
-            throw new CustomException( "appId为空");
+            throw new    RuntimeException( "appId为空");
         }
         if (StringUtils.isBlank(request.getXmlStr())) {
-            throw new CustomException("xmlStr为空");
+            throw new    RuntimeException("xmlStr为空");
         }
 
         WxPayNotifyOrderResponse resp = new WxPayNotifyOrderResponse();
@@ -168,7 +168,7 @@ public class PayServiceImpl implements PayService {
         infoQueryWrapper.eq("order_no",orderNo);
         OrderInfo orderInfo=orderService.getOne(infoQueryWrapper);
         if(null==orderInfo){
-            throw new RuntimeException("错误的订单信息,请联系管理员!");
+            throw new    RuntimeException("错误的订单信息,请联系管理员!");
         }
         Integer orderStatus=orderInfo.getOrderStatus();
         //TODO 已支付
@@ -178,7 +178,7 @@ public class PayServiceImpl implements PayService {
         }
         //TODO  待支付
         if(StateUtil.orderStatus.os0!=orderStatus){
-            throw new RuntimeException("错误的订单状态,请联系管理员!");
+            throw new    RuntimeException("错误的订单状态,请联系管理员!");
         }
         String tradeNo=notifyOrder.getTransactionId();
         OrderInfo info=new OrderInfo();

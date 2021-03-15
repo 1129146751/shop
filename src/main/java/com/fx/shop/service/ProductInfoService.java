@@ -1,12 +1,13 @@
 package com.fx.shop.service;
 
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.product.req.AddReq;
 import com.fx.shop.dto.product.req.EditReq;
 import com.fx.shop.dto.product.req.QueryReq;
 import com.fx.shop.dto.product.resp.Resp;
 import com.fx.shop.entity.ProductInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.sineyun.commons.base.dto.response.PageResp;
+
 
 import java.util.List;
 

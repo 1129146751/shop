@@ -23,7 +23,7 @@
 
 
     <!--    从私服里面下载依赖包时，需要在项目工程的pom.xml文件中添加如下内容：-->
-    <repositories>
+    <!--<repositories>
         <repository>
             <id>maven-central</id>
             <name>maven-central</name>
@@ -35,7 +35,7 @@
                 <enabled>true</enabled>
             </releases>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <dependencies>
         <!--spring-boot-starter-->
@@ -74,19 +74,13 @@
         </dependency>
 
         <!--redis-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
             <version>2.2.6.RELEASE</version>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
         <!--连接池-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-            <version>2.8.0</version>
-            <scope>provided</scope>
-        </dependency>
 
         <!-- 集成swagger接口文档 -->
         <dependency>
@@ -133,31 +127,20 @@
         </dependency>
 
         <!--服务公共模块-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.sineyun.commons</groupId>
             <artifactId>sineyun-framework-commons</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <!-- springboot 2.3之后消失的hibernate-validator解决方法-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-validation</artifactId>
-        </dependency>
+        </dependency>-->
+
 
         <!--redis-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
             <version>2.2.6.RELEASE</version>
             <scope>provided</scope>
-        </dependency>
-        <!--连接池-->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-pool2</artifactId>
-            <version>2.8.0</version>
-            <scope>provided</scope>
-        </dependency>
+        </dependency>-->
 
         <!--mysql-->
         <dependency>
@@ -219,17 +202,11 @@
             <artifactId>weixin-java-cp</artifactId>
             <version>${weixin-java.version}</version>
         </dependency>
-        <!-- JWT -->
-        <dependency>
-            <groupId>com.auth0</groupId>
-            <artifactId>java-jwt</artifactId>
-            <version>3.2.0</version>
-        </dependency>
         <!--springboot中的redis依赖-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
@@ -245,6 +222,17 @@
                 </configuration>
             </plugin>
             <!-- 配置打包类 -->
+                    <plugin>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>repackage</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
         </plugins>
     </build>
 

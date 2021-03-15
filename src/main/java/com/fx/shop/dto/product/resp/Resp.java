@@ -38,8 +38,8 @@ public class Resp implements Serializable {
     @ApiModelProperty(value = "商品缩阅图")
     private String minImg;
 
-    @ApiModelProperty(value = "商品属性分类编码")
-    private String sortCode;
+    @ApiModelProperty(value = "商品属性分类ids")
+    private String sortIds;
 
     @ApiModelProperty(value = "商品属性分类名称")
     private String sortName;
@@ -86,7 +86,10 @@ public class Resp implements Serializable {
     //TODO 优惠券信息
 
     @ApiModelProperty(value = "优惠券信息")
-    private String coupon;
+    private String couponName;
+
+    @ApiModelProperty(value = "优惠券ids")
+    private String couponIds;
 
 
 }

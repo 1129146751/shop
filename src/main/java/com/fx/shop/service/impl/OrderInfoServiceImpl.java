@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.exFee.req.QueryReq;
 import com.fx.shop.dto.exFee.resp.Resp;
 import com.fx.shop.dto.order.req.OrderCreateReq;
@@ -15,15 +16,12 @@ import com.fx.shop.dto.order.resp.OrderResp;
 import com.fx.shop.entity.*;
 import com.fx.shop.mapper.OrderInfoMapper;
 import com.fx.shop.service.*;
-import com.fx.shop.util.jwt.JwtUtil;
+
 import com.fx.shop.util.order.OrderNoUtil;
 import com.fx.shop.util.redis.RedisUtil;
 import com.fx.shop.util.state.StateUtil;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.exception.CustomException;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -59,16 +57,16 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
      */
     @Override
     public String create(OrderCreateReq req) {
-        Long userId=JwtUtil.getUserId();
+        Long userId=req.getUserId();
         String orderNo=OrderNoUtil.createOrderNo();
         CustomerUser customerUser=customerUserService.getById(userId);
         if(null==customerUser){
-            throw new CustomException("当前用户信息有误，请联系管理员!");
+            throw new    RuntimeException("当前用户信息有误，请联系管理员!");
         }
         Long addressId=req.getAddressId();
         UserShippingAddress address=addressService.getById(addressId);
         if(null==address){
-            throw new CustomException("收货地址信息有误，请联系管理员!");
+            throw new    RuntimeException("收货地址信息有误，请联系管理员!");
         }
         //TODO 快递费
         BigDecimal freightAmount=new BigDecimal("0");
@@ -77,7 +75,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         PageResp<Resp> pageResp= feeService.query(expReq);
         List<Resp> resps=pageResp.getRecords();
         if(null==resps||resps.size()==0){
-            throw new CustomException(address.getProvince()+"地区不支持快递配送，请联系管理员!");
+            throw new    RuntimeException(address.getProvince()+"地区不支持快递配送，请联系管理员!");
         }
         freightAmount=resps.get(0).getExpress();
         //TODO 物流信息
@@ -129,7 +127,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
      */
     @Override
     public PageResp<OrderResp> query(OrderQueryReq req) {
-        redisUtil.set("1234",1234);
+//        redisUtil.set("1234",1234);
         IPage<OrderInfo> page=new Page(req.getCurrent(),req.getSize());
         QueryWrapper<OrderInfo> queryWrapper=new QueryWrapper<>();
         Long id=req.getId();
@@ -170,7 +168,7 @@ public class OrderInfoServiceImpl extends ServiceImpl<OrderInfoMapper, OrderInfo
         Long id=req.getId();
         OrderInfo orderInfo=this.getById(id);
         if(null==orderInfo){
-            throw new CustomException("错误的订单信息,请联系管理员!");
+            throw new    RuntimeException("错误的订单信息,请联系管理员!");
         }
         OrderInfo info=new OrderInfo();
         BeanUtil.copyProperties(req,info);

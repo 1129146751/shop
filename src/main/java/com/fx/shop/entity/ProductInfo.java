@@ -40,9 +40,6 @@ public class ProductInfo implements Serializable {
     @ApiModelProperty(value = "商品缩阅图")
     private String minImg;
 
-    @ApiModelProperty(value = "商品属性分类")
-    private String sortCode;
-
     @ApiModelProperty(value = "销量")
     private Integer saleQuantity;
 

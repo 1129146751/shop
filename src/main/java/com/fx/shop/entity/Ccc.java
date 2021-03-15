@@ -1,12 +1,9 @@
 package com.fx.shop.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import com.sineyun.commons.base.pojo.BasePoJo;
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 

@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.sort.req.AddReq;
 import com.fx.shop.dto.sort.req.EditReq;
 import com.fx.shop.dto.sort.req.QueryReq;
@@ -12,8 +13,8 @@ import com.fx.shop.entity.ProductSort;
 import com.fx.shop.mapper.ProductSortMapper;
 import com.fx.shop.service.ProductSortService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.exception.CustomException;
+
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
@@ -49,7 +50,7 @@ public class ProductSortServiceImpl extends ServiceImpl<ProductSortMapper, Produ
     @Override
     public void edit(EditReq req) {
         if(null==req.getId()){
-            throw new CustomException("主键不能为空");
+            throw new    RuntimeException("主键不能为空");
         }
         ProductSort sort=new ProductSort();
         BeanUtil.copyProperties(req,sort);

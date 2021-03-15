@@ -1,15 +1,10 @@
 package com.fx.shop.dto.coupon.req;
 
-import com.sineyun.commons.base.dto.request.BasePageReq;
+
+import com.fx.shop.dto.BasePageReq;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import java.io.Serializable;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 /**
  * <p>

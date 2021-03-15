@@ -19,6 +19,9 @@ public class OrderCreateReq implements Serializable {
     @NotNull(message = "收件人地址不能为空")
     @ApiModelProperty(value = "收件人地址",required = true)
     private Long addressId;
+    @NotNull(message = "用户id")
+    @ApiModelProperty(value = "用户id",required = true)
+    private Long  userId;
 
     @NotNull(message = "商品数据不能为空")
     @ApiModelProperty(value = "商品数据",required = true)

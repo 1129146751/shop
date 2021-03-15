@@ -1,13 +1,15 @@
 package com.fx.shop.controller;
 
 
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.product.req.AddReq;
 import com.fx.shop.dto.product.req.EditReq;
 import com.fx.shop.dto.product.req.QueryReq;
 import com.fx.shop.dto.product.resp.Resp;
 import com.fx.shop.service.ProductInfoService;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.result.ApiResult;
+
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

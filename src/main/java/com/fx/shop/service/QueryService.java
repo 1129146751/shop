@@ -1,7 +1,7 @@
 package com.fx.shop.service;
 
 
-import com.sineyun.commons.core.result.ApiResult;
+import com.fx.shop.util.result.ApiResult;
 
 /**
  * @author ly

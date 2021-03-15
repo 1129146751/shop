@@ -1,6 +1,7 @@
 package com.fx.shop.dto.login.resp;
 
-import com.sineyun.commons.base.dto.BaseDTO;
+
+import com.fx.shop.dto.BaseDTO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

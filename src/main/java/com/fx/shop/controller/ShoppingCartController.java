@@ -6,7 +6,8 @@ import com.fx.shop.dto.cart.req.DelReq;
 import com.fx.shop.dto.cart.req.QueryReq;
 import com.fx.shop.dto.cart.resp.Resp;
 import com.fx.shop.service.ShoppingCartService;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
@@ -35,9 +36,9 @@ public class ShoppingCartController {
      * @return
      */
     @ApiOperation(value = "查询",notes = "查询")
-    @PostMapping("/query")
-    public ApiResult<List<Resp>> query(){
-        List<Resp> respList=cartService.queryCart();
+    @GetMapping("/query")
+    public ApiResult<List<Resp>> query(Long userId){
+        List<Resp> respList=cartService.queryCart(userId);
        return ApiResult.success(respList);
     }
 

@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.coupon.req.CouponAddReq;
 import com.fx.shop.dto.coupon.req.CouponEditReq;
 import com.fx.shop.dto.coupon.req.CouponReq;
@@ -14,8 +15,8 @@ import com.fx.shop.mapper.CouponMapper;
 import com.fx.shop.service.CouponService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fx.shop.service.CustomerCouponRelService;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.exception.CustomException;
+
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -97,7 +98,11 @@ public class CouponServiceImpl extends ServiceImpl<CouponMapper, Coupon> impleme
     @Override
     public void add(CouponAddReq req) {
         Coupon coupon=new Coupon();
+        req.setEndTime(req.getEndTime()+" 23:59:59");
         BeanUtil.copyProperties(req,coupon);
+        if(null==req.getState()){
+            coupon.setState(0);
+        }
         this.save(coupon);
     }
 
@@ -109,8 +114,10 @@ public class CouponServiceImpl extends ServiceImpl<CouponMapper, Coupon> impleme
     public void edit(CouponEditReq req) {
         Long id=req.getId();
         Coupon coupon=this.getById(id);
+
         if(null==coupon){
-            throw new CustomException("该优惠券信息不存在,请联系管理员!");
+            throw new    RuntimeException("该优惠券信息不存在,请联系管理员!");
+
         }
         Coupon coupon1=new Coupon();
         BeanUtil.copyProperties(req,coupon1);

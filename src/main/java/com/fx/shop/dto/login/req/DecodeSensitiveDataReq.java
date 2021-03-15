@@ -1,12 +1,11 @@
 package com.fx.shop.dto.login.req;
 
-import com.sineyun.commons.base.dto.BaseDTO;
+import com.fx.shop.dto.BaseDTO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 /**
  * 解密微信敏感数据请求

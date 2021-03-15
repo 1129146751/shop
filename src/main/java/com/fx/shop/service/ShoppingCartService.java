@@ -17,7 +17,7 @@ import java.util.List;
  * @since 2021-01-20
  */
 public interface ShoppingCartService extends IService<ShoppingCart> {
-    List<Resp> queryCart();
+    List<Resp> queryCart(Long userId);
 
     void add(AddReq req);
 

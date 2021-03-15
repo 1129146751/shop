@@ -6,7 +6,8 @@ import com.fx.shop.dto.appoint.AppointReq;
 import com.fx.shop.dto.sheet.ElectronicCancelReq;
 import com.fx.shop.dto.sheet.ElectronicSheetReq;
 import com.fx.shop.dto.visit.VisitReq;
-import com.sineyun.commons.core.result.ApiResult;
+import com.fx.shop.util.result.ApiResult;
+
 
 /**
  * @author zhangyi

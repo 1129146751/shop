@@ -3,7 +3,6 @@ package com.fx.shop.controller;
 
 import com.fx.shop.dto.wx.WeixinParam;
 import com.fx.shop.service.CccService;
-import com.fx.shop.util.jwt.JwtUtil;
 import com.fx.shop.util.redis.RedisUtil;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +34,7 @@ public class CccController {
     CccService service;
     @Autowired
     WeixinParam param;
-    @PostMapping("method")
+    /*@PostMapping("method")
     public Object method(){
        Map map=new HashMap<>();
         long maxAccessExpiration = 24*60*60*1000;//一天
@@ -57,7 +56,7 @@ public class CccController {
         Map userNameMap = JwtUtil.getPayload(accessToken,Map.class);
         log.info(""+userNameMap.get("userName"));
         return map;
-    }
+    }*/
     @Resource
     private RedisUtil redisUtil;
     @PostMapping("/method1")

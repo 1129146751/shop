@@ -1,13 +1,14 @@
 package com.fx.shop.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.sort.req.AddReq;
 import com.fx.shop.dto.sort.req.EditReq;
 import com.fx.shop.dto.sort.req.QueryReq;
 import com.fx.shop.dto.sort.resp.Resp;
 import com.fx.shop.entity.ProductSort;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.sineyun.commons.base.dto.response.PageResp;
+
 
 /**
  * <p>

@@ -3,7 +3,6 @@ package com.fx.shop.util.order;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.util.IdUtil;
-import com.sineyun.commons.base.constants.CustomDatePattern;
 
 import java.util.Date;
 import java.util.Random;
@@ -52,7 +51,7 @@ public final class OrderNoUtil {
      * @return 生成的编号
      */
     private static String createNo(String prefix) {
-        String dateStr = DateUtil.format(new Date(), CustomDatePattern.CUSTOM_PATTERN_YMDHMS);
+        String dateStr = DateUtil.format(new Date(), "yyyyMMddHHmmss");
         String strA = getStringRandom(2);
         return (prefix + dateStr + strA).toUpperCase();
     }

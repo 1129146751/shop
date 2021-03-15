@@ -10,7 +10,8 @@ import com.fx.shop.util.common.RestCode;
 import com.fx.shop.util.enums.LogisticsType;
 import com.fx.shop.service.QueryService;
 import com.fx.shop.util.MD.Md5Util;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

@@ -16,7 +16,7 @@ import com.fx.shop.util.redis.RedisUtil;
 import com.github.binarywang.wxpay.config.WxPayConfig;
 import com.github.binarywang.wxpay.service.WxPayService;
 import com.github.binarywang.wxpay.service.impl.WxPayServiceImpl;
-import com.sineyun.commons.core.exception.CustomException;
+
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
@@ -75,7 +75,7 @@ public class WXServiceImpl implements WXService {
                 payConfig.setKeyContent(keyContent);
             } catch (DecoderException e) {
                 log.error("", e);
-                throw new RuntimeException(e);
+                throw new    RuntimeException(e);
             }
         }
 
@@ -95,7 +95,7 @@ public class WXServiceImpl implements WXService {
         String openId=req.getOpenId();
         Object sessionKeyObj=redisUtil.get(openId);
         if(null==sessionKeyObj){
-            throw new CustomException("错误的会话密钥!");
+            throw new    RuntimeException("错误的会话密钥!");
         }
         //TODO 会话秘钥
         String sessionKey=sessionKeyObj.toString();

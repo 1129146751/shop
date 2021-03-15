@@ -3,13 +3,14 @@ package com.fx.shop.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.area.req.AreaQueryReq;
 import com.fx.shop.dto.area.resp.AreaResp;
 import com.fx.shop.entity.ComArea;
 import com.fx.shop.mapper.ComAreaMapper;
 import com.fx.shop.service.ComAreaService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.sineyun.commons.base.dto.response.PageResp;
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 

@@ -3,7 +3,9 @@ package com.fx.shop.controller;
 
 import com.fx.shop.dto.productSortRel.PsRelReq;
 import com.fx.shop.service.ProductSortRelService;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,6 +24,7 @@ import javax.validation.Valid;
  * @author fx
  * @since 2021-02-04
  */
+@Api(tags = "商品-分类关系")
 @RestController
 @RequestMapping("/productSortRel")
 public class ProductSortRelController {
@@ -33,10 +36,10 @@ public class ProductSortRelController {
      * @return
      */
     @PostMapping("/add")
-    @ApiOperation(value = "增加",notes = "增加")
+    @ApiOperation(value = "增加/修改",notes = "增加/修改")
     public ApiResult<String> add(@RequestBody @Valid PsRelReq req){
         relService.add(req);
-        return ApiResult.success("增加成功!");
+        return ApiResult.success("操作成功!");
     }
 
 

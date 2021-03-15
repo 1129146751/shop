@@ -1,6 +1,5 @@
 package com.fx.shop.config;
 
-import com.sineyun.commons.base.TokenInfo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -54,7 +53,7 @@ public class SwaggerConfig {
 
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(enable)
-                .ignoredParameterTypes(TokenInfo.class)
+                .ignoredParameterTypes(Object.class)
                 .groupName(applicationGroup01)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(selector))
@@ -76,7 +75,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .enable(enable)
                 .pathMapping(pathMapping)
-                .ignoredParameterTypes(TokenInfo.class)
+                .ignoredParameterTypes(Object.class)
                 .groupName(applicationGroup02)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(selector))

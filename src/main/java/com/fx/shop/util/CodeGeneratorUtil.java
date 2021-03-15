@@ -10,7 +10,6 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
-import com.sineyun.commons.base.pojo.BasePoJo;
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 
@@ -41,7 +40,7 @@ public class CodeGeneratorUtil {
     /**
      * 数据库地址
      */
-    private String dataSourceUrl = "jdbc:mysql://localhost:3306/shop";
+    private String dataSourceUrl = "jdbc:mysql://8.136.198.103:3306/shop";
     /**
      * 数据库用户名
      */
@@ -49,7 +48,7 @@ public class CodeGeneratorUtil {
     /**
      * 数据库密码
      */
-    private String dataSourcePassword = "root";
+    private String dataSourcePassword = "3edc$RFV";
 
 
     /**

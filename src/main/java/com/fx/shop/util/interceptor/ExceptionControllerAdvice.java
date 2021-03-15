@@ -1,7 +1,8 @@
 package com.fx.shop.util.interceptor;
 
 import com.fx.shop.util.common.RestCode;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindException;

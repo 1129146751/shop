@@ -29,8 +29,7 @@ public class PsRelReq implements Serializable {
     @ApiModelProperty(value = "商品id",required = true)
     private Long productId;
 
-    @NotNull(message = "分类ids不能为空")
-    @ApiModelProperty(value = "分类ids",required = true)
+    @ApiModelProperty(value = "分类ids(多个以逗号隔开)")
     private Set<Long> sortIds;
 
 

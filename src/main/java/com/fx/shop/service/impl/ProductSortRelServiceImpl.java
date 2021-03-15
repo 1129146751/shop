@@ -1,5 +1,6 @@
 package com.fx.shop.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.fx.shop.dto.productSortRel.PsRelReq;
 import com.fx.shop.entity.ProductInfo;
 import com.fx.shop.entity.ProductSort;
@@ -9,7 +10,7 @@ import com.fx.shop.service.ProductInfoService;
 import com.fx.shop.service.ProductSortRelService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fx.shop.service.ProductSortService;
-import com.sineyun.commons.core.exception.CustomException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,16 +42,22 @@ public class ProductSortRelServiceImpl extends ServiceImpl<ProductSortRelMapper,
         Long productId=req.getProductId();
         ProductInfo productInfo=infoService.getById(productId);
         if(null==productInfo){
-            throw new CustomException("该商品不存在，请联系管理员!");
+            throw new    RuntimeException("该商品不存在，请联系管理员!");
         }
         //TODO 先删除商品对应的属性
+        QueryWrapper<ProductSortRel> relQueryWrapper=new QueryWrapper<>();
+        relQueryWrapper.eq("product_id",productId);
+        this.remove(relQueryWrapper);
+
         Set<Long> sortIds=req.getSortIds();
-        sortService.removeByIds(sortIds);
+        if(null==sortIds||sortIds.size()==0){
+            return;
+        }
         for(Long sortId:sortIds){
             //TODO 商品属性校验
             ProductSort productSort=sortService.getById(sortId);
             if(null==productSort){
-                throw new CustomException("该商品属性信息不存在，请联系管理员!");
+                throw new    RuntimeException("该商品属性信息不存在，请联系管理员!");
             }
             //TODO 商品和属性信息保存
             ProductSortRel productSortRel=new ProductSortRel();

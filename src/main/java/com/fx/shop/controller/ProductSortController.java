@@ -2,13 +2,15 @@ package com.fx.shop.controller;
 
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.sort.req.AddReq;
 import com.fx.shop.dto.sort.req.EditReq;
 import com.fx.shop.dto.sort.req.QueryReq;
 import com.fx.shop.dto.sort.resp.Resp;
 import com.fx.shop.service.ProductSortService;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.result.ApiResult;
+
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

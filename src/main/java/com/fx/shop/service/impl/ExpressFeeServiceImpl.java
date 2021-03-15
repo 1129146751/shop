@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.exFee.req.AddReq;
 import com.fx.shop.dto.exFee.req.EditReq;
 import com.fx.shop.dto.exFee.req.QueryReq;
@@ -12,8 +13,8 @@ import com.fx.shop.entity.ExpressFee;
 import com.fx.shop.mapper.ExpressFeeMapper;
 import com.fx.shop.service.ExpressFeeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.exception.CustomException;
+
+
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
@@ -43,7 +44,7 @@ public class ExpressFeeServiceImpl extends ServiceImpl<ExpressFeeMapper, Express
         checkWrapper.eq("express_type",expressType);
         int count=this.count(checkWrapper);
         if(count>0){
-            throw new CustomException("该区域快递方式已经存在,不能重复添加!");
+            throw new    RuntimeException("该区域快递方式已经存在,不能重复添加!");
         }
         if(3==expressType){
             req.setExpress(new BigDecimal("0"));
@@ -61,7 +62,7 @@ public class ExpressFeeServiceImpl extends ServiceImpl<ExpressFeeMapper, Express
     @Override
     public void edit(EditReq req) {
         if(null==req.getId()){
-            throw new CustomException("主键不能为空!");
+            throw new    RuntimeException("主键不能为空!");
         }
         ExpressFee expressFee=new ExpressFee();
         BeanUtil.copyProperties(req,expressFee);

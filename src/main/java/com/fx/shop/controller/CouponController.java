@@ -1,6 +1,7 @@
 package com.fx.shop.controller;
 
 
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.area.req.AreaQueryReq;
 import com.fx.shop.dto.area.resp.AreaResp;
 import com.fx.shop.dto.coupon.req.CouponAddReq;
@@ -8,8 +9,9 @@ import com.fx.shop.dto.coupon.req.CouponEditReq;
 import com.fx.shop.dto.coupon.req.CouponReq;
 import com.fx.shop.dto.coupon.resp.CouponResp;
 import com.fx.shop.service.CouponService;
-import com.sineyun.commons.base.dto.response.PageResp;
-import com.sineyun.commons.core.result.ApiResult;
+
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

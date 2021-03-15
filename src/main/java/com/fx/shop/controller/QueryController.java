@@ -1,7 +1,8 @@
 package com.fx.shop.controller;
 
 import com.fx.shop.service.QueryService;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

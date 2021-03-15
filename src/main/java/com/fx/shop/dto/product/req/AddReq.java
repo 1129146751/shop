@@ -41,9 +41,9 @@ public class AddReq implements Serializable {
     @ApiModelProperty(value = "商品缩阅图",required = true)
     private String minImg;
 
-    @NotBlank(message = "商品属性分类不能为空")
+    /*@NotBlank(message = "商品属性分类不能为空")
     @ApiModelProperty(value = "商品属性分类",required = true)
-    private String sortCode;
+    private String sortCode;*/
 
     @NotNull(message = "价格不能为空")
     @ApiModelProperty(value = "价格",required = true)

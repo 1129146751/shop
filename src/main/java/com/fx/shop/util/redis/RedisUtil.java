@@ -137,7 +137,7 @@ public class RedisUtil {
      */
     public long incr(String key, long delta){
         if(delta<0){
-            throw new RuntimeException("递增因子必须大于0");
+            throw new    RuntimeException("递增因子必须大于0");
         }
         return redisTemplate.opsForValue().increment(key, delta);
     }
@@ -150,7 +150,7 @@ public class RedisUtil {
      */
     public long decr(String key, long delta){
         if(delta<0){
-            throw new RuntimeException("递减因子必须大于0");
+            throw new    RuntimeException("递减因子必须大于0");
         }
         return redisTemplate.opsForValue().increment(key, -delta);
     }

@@ -10,6 +10,7 @@ import lombok.EqualsAndHashCode;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * <p>
@@ -42,10 +43,10 @@ public class CouponResp implements Serializable {
     private Integer type;
 
     @ApiModelProperty(value = "开始时间")
-    private LocalDateTime startTime;
+    private Date startTime;
 
     @ApiModelProperty(value = "结束时间")
-    private LocalDateTime endTime;
+    private Date endTime;
 
     @ApiModelProperty(value = "状态（1可用，0不可用）")
     private Integer state;

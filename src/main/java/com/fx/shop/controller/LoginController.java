@@ -6,7 +6,8 @@ import com.fx.shop.dto.login.resp.WxOpenIdResp;
 import com.fx.shop.dto.login.resp.WxUserInfoResp;
 import com.fx.shop.service.LoginService;
 import com.fx.shop.service.WXService;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;

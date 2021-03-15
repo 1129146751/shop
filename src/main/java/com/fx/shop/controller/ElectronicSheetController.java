@@ -6,7 +6,8 @@ import com.fx.shop.dto.sheet.ElectronicCancelReq;
 import com.fx.shop.dto.sheet.ElectronicSheetReq;
 import com.fx.shop.dto.visit.VisitReq;
 import com.fx.shop.service.OrderService;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

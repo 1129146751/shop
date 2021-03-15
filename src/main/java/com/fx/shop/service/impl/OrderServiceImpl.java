@@ -12,7 +12,8 @@ import com.fx.shop.dto.sheet.ElectronicSheetReq;
 import com.fx.shop.dto.visit.VisitReq;
 import com.fx.shop.service.OrderService;
 import com.fx.shop.util.MD.Md5Util;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

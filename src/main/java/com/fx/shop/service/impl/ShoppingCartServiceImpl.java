@@ -11,8 +11,8 @@ import com.fx.shop.service.ProductInfoService;
 import com.fx.shop.service.ShoppingCartService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fx.shop.util.common.ObjectUtil;
-import com.fx.shop.util.jwt.JwtUtil;
-import com.sineyun.commons.core.exception.CustomException;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,8 +35,7 @@ public class ShoppingCartServiceImpl extends ServiceImpl<ShoppingCartMapper, Sho
      * @return
      */
     @Override
-    public List<Resp> queryCart() {
-        Long userId=JwtUtil.getUserId();
+    public List<Resp> queryCart(Long userId) {
         QueryWrapper<ShoppingCart> cartWrapper=new QueryWrapper<>();
         cartWrapper.select("product_id");
         cartWrapper.eq("user_id",userId);
@@ -65,7 +64,7 @@ public class ShoppingCartServiceImpl extends ServiceImpl<ShoppingCartMapper, Sho
      */
     @Override
     public void add(AddReq req) {
-        Long userId=JwtUtil.getUserId();
+        Long userId=req.getUserId();
         Long pid=req.getPid();
         Integer addNum=req.getNum();
         QueryWrapper<ShoppingCart> queryWrapper=new QueryWrapper<>();
@@ -97,7 +96,7 @@ public class ShoppingCartServiceImpl extends ServiceImpl<ShoppingCartMapper, Sho
         Integer delType=req.getDelType();
         ShoppingCart cart=this.getById(id);
         if(null==cart){
-            throw  new CustomException("该商品不存在,请联系管理员!");
+            throw  new    RuntimeException("该商品不存在,请联系管理员!");
         }
        if(2==delType){
            this.removeById(id);

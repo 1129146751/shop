@@ -29,8 +29,7 @@ public class PcRelReq implements Serializable {
     @ApiModelProperty(value = "商品id",required = true)
     private Long productId;
 
-    @NotNull(message = "优惠券id不能为空")
-    @ApiModelProperty(value = "优惠券id",required = true)
+    @ApiModelProperty(value = "优惠券ids(多个以逗号隔开)",required = true)
     private Set<Long> couponId;
 
 

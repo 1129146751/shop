@@ -2,7 +2,8 @@ package com.fx.shop.dto.sort.req;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.sineyun.commons.base.dto.request.BasePageReq;
+
+import com.fx.shop.dto.BasePageReq;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.models.auth.In;

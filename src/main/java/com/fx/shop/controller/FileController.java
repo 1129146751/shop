@@ -1,7 +1,8 @@
 package com.fx.shop.controller;
 
 import com.fx.shop.service.FileService;
-import com.sineyun.commons.core.result.ApiResult;
+
+import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;

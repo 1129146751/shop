@@ -23,4 +23,7 @@ public class AddReq implements Serializable {
     @ApiModelProperty(value = "数量",required = true)
     private Integer num;
 
+    @NotNull(message = "用户id不能为空")
+    @ApiModelProperty(value = "用户id",required = true)
+    private Long userId;
 }

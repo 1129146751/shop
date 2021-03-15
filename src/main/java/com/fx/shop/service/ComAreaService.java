@@ -1,10 +1,11 @@
 package com.fx.shop.service;
 
+import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.area.req.AreaQueryReq;
 import com.fx.shop.dto.area.resp.AreaResp;
 import com.fx.shop.entity.ComArea;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.sineyun.commons.base.dto.response.PageResp;
+
 
 /**
  * <p>
