@@ -21,7 +21,14 @@ public class OrderCreateReq implements Serializable {
     private Long addressId;
     @NotNull(message = "用户id")
     @ApiModelProperty(value = "用户id",required = true)
-    private Long  userId;
+    private Long  customerId;
+
+    @ApiModelProperty(value = "使用积分数")
+    private Integer integralCount;
+
+
+    @ApiModelProperty(value = "优惠券ids")
+    private String  couponIds;
 
     @NotNull(message = "商品数据不能为空")
     @ApiModelProperty(value = "商品数据",required = true)
@@ -38,6 +45,7 @@ public class OrderCreateReq implements Serializable {
 
         @NotNull(message = "购买数量不能为空")
         @ApiModelProperty(value = "购买数量",required = true)
-        private BigDecimal num;
+        private Integer num;
     }
+
 }

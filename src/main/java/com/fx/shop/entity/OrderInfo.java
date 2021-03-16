@@ -27,7 +27,7 @@ public class OrderInfo implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键")
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
     @ApiModelProperty(value = "订单号")
@@ -51,15 +51,22 @@ public class OrderInfo implements Serializable {
     @ApiModelProperty(value = "其他金额，预留")
     private BigDecimal otherAmount;
 
-    @ApiModelProperty(value = "优惠金额，预留")
-    private BigDecimal discountAmount;
+    @ApiModelProperty(value = "优惠券金额，预留")
+    private BigDecimal couponAmount;
 
     @ApiModelProperty(value = "总金额")
     private BigDecimal totalAmount;
 
 
-    @ApiModelProperty(value = "积分数")
-    private Integer integralAmount;
+    @ApiModelProperty(value = "积分金额")
+    private BigDecimal integralAmount;
+
+    @ApiModelProperty(value = "积分数量")
+    private Integer integralCount;
+
+
+    @ApiModelProperty(value = "优惠券详情（优惠券id：金额）")
+    private String couponDetail;
 
     @ApiModelProperty(value = "实付款")
     private BigDecimal payAmount;

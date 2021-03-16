@@ -25,7 +25,7 @@ public class CustomerUser implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键ID")
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
     @ApiModelProperty(value = "用户编码")
@@ -48,6 +48,12 @@ public class CustomerUser implements Serializable {
 
     @ApiModelProperty(value = "appId")
     private String appId;
+
+    @ApiModelProperty(value = "会员（1是 0否）")
+    private Integer member;
+
+    @ApiModelProperty(value = "会员积分")
+    private Integer integral;
 
     @ApiModelProperty(value = "更新时间")
     private LocalDateTime createTime;

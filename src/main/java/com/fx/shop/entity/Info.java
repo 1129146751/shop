@@ -41,5 +41,6 @@ public class Info implements Serializable {
     @ApiModelProperty(value = "商城首页简介")
     private String homePage;
 
-
+    @ApiModelProperty(value = "转换比 (购买商品一块钱需要多少积分)")
+    private Integer  integralRatio;
 }

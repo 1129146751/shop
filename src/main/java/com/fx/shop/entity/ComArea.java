@@ -24,7 +24,7 @@ public class ComArea implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "主键id")
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
     @ApiModelProperty(value = "区域层级")

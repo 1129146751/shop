@@ -1,4 +1,4 @@
-package com.fx.shop.entity;
+package com.fx.shop.dto.useraddress.req;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -7,8 +7,10 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 /**
  * <p>
@@ -19,14 +21,12 @@ import java.util.Date;
  * @since 2021-01-20
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
-@ApiModel(value="UserShippingAddress对象", description="用户收货地址")
-public class UserShippingAddress implements Serializable {
+@ApiModel(value="UserShippingAddress对象", description="用户常用地址修改")
+public class AddresseEditReq implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    @ApiModelProperty(value = "主键")
-    @TableId(value = "id", type = IdType.ASSIGN_ID)
+    @NotNull(message = "主键不能为空")
+    @ApiModelProperty(value = "主键",required = true)
     private Long id;
 
     @ApiModelProperty(value = "所属用户")
@@ -75,10 +75,10 @@ public class UserShippingAddress implements Serializable {
     private Integer defaultSign;
 
     @ApiModelProperty(value = "更新时间")
-    private Date createTime;
+    private LocalDateTime createTime;
 
     @ApiModelProperty(value = "创建时间")
-    private Date updateTime;
+    private LocalDateTime updateTime;
 
 
 }

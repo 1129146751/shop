@@ -70,4 +70,16 @@ public final class WebUtil {
         }
         return ip;
     }
+    /**
+     * 获取request
+     *
+     * @return
+     */
+    public static HttpServletRequest getCurrentRequest() {
+        ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder
+                .getRequestAttributes();
+        HttpServletRequest request = requestAttributes.getRequest();
+
+        return request;
+    }
 }

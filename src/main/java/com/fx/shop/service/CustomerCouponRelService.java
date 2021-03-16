@@ -1,5 +1,6 @@
 package com.fx.shop.service;
 
+import com.fx.shop.dto.customerCouponRel.req.CouponAddReq;
 import com.fx.shop.entity.CustomerCouponRel;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CustomerCouponRelService extends IService<CustomerCouponRel> {
 
+    void add(CouponAddReq req);
 }

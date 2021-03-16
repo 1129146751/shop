@@ -1,6 +1,7 @@
 package com.fx.shop.controller;
 
 
+import cn.hutool.json.JSONUtil;
 import com.fx.shop.dto.PageResp;
 import com.fx.shop.dto.order.req.OrderCreateReq;
 import com.fx.shop.dto.order.req.OrderEditReq;
@@ -9,6 +10,7 @@ import com.fx.shop.dto.order.resp.OrderResp;
 import com.fx.shop.service.OrderInfoService;
 
 
+import com.fx.shop.util.redis.RedisUtil;
 import com.fx.shop.util.result.ApiResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.io.IOException;
 
@@ -37,6 +40,8 @@ import java.io.IOException;
 public class OrderInfoController {
     @Autowired
     private OrderInfoService orderService;
+    @Resource
+    private RedisUtil redisUtil;
     /**
      *创建订单
      * @param req
@@ -56,7 +61,9 @@ public class OrderInfoController {
     @PostMapping("/query")
     @ApiOperation(value = "查询订单")
     public ApiResult<PageResp<OrderResp>> query(@RequestBody OrderQueryReq req){
+        redisUtil.set("key1234",req);
         PageResp<OrderResp> resp= orderService.query(req);
+
         return ApiResult.success(resp);
     }
 

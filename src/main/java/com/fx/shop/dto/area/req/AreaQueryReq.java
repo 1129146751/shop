@@ -15,7 +15,7 @@ import lombok.Data;
 @ApiModel(value="行政机构查询", description="行政机构查询")
 public class AreaQueryReq extends BasePageReq {
     @ApiModelProperty(value = "主键id")
-    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.ASSIGN_ID)
     private Long id;
 
     @ApiModelProperty(value = "区域层级区域层级(0省,1市,2区,3乡镇街道....)")
